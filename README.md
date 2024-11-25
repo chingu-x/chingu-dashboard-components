@@ -10,7 +10,5 @@ Look at the examples to see exact code needed. It's important to follow it exact
 Once that's setup, run this command (requires node version > 16) Make sure to do it at the root level of the project
 
 ```
-node generate-exports.js
+pn build
 ```
-
-This will generate the updated exports object which is important as this will allow the consumer application to use the component
