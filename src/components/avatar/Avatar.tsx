@@ -1,3 +1,5 @@
+"use client";
+
 // TODO: replace with actual avatar component
 
 export default function Avatar() {

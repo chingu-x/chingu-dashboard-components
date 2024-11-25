@@ -5,20 +5,6 @@
   "module": "dist/index.js",
   "type": "module",
   "types": "dist/types/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/types/index.d.ts"
-    },
-    "./avatar": {
-      "import": "./dist/components/avatar/index.js",
-      "types": "./dist/types/components/avatar/index.d.ts"
-    },
-    "./button": {
-      "import": "./dist/components/button/index.js",
-      "types": "./dist/types/components/button/index.d.ts"
-    }
-  },
   "files": [
     "dist"
   ],
@@ -42,5 +28,23 @@
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./components/avatar": {
+      "import": "./dist/components/avatar/index.js",
+      "types": "./dist/types/components/avatar/index.d.ts"
+    },
+    "./components/button": {
+      "import": "./dist/components/button/index.js",
+      "types": "./dist/types/components/button/index.d.ts"
+    },
+    "./components/input": {
+      "import": "./dist/components/input/index.js",
+      "types": "./dist/types/components/input/index.d.ts"
+    }
   }
 }
