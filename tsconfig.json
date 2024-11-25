@@ -4,7 +4,6 @@
     "module": "ESNext",
     "jsx": "react-jsx",
     "declaration": true,
-     "emitDeclarationOnly": true,
     "declarationDir": "dist/types",
     "outDir": "dist",
     "esModuleInterop": true,

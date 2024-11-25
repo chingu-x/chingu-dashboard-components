@@ -2,11 +2,22 @@
   "name": "chingu-dashboard-components",
   "version": "1.0.0",
   "description": "Component library for Chingu dashboard projects",
-  "module": "dist/index.mjs",
+  "module": "dist/index.js",
+  "type": "module",
   "types": "dist/types/index.d.ts",
   "exports": {
-    "import": "./dist/index.mjs",
-    "types": "./dist/types/index.d.ts"
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./avatar": {
+      "import": "./dist/components/avatar/index.js",
+      "types": "./dist/types/components/avatar/index.d.ts"
+    },
+    "./button": {
+      "import": "./dist/components/button/index.js",
+      "types": "./dist/types/components/button/index.d.ts"
+    }
   },
   "files": [
     "dist"
