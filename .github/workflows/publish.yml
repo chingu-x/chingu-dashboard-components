@@ -14,22 +14,25 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup Node.js and npm
+      - name: Setup Node.js and pnpm
         uses: actions/setup-node@v3
         with:
           node-version: "16"
-          cache: "npm"
+          cache: "pnpm" 
 
-      - name: Install dependencies with npm
-        run: npm install
-
+      - name: Install pnpm
+        run: npm install -g pnpm
+=
+      - name: Install dependencies with pnpm
+        run: pnpm install
+=
       - name: Run semantic-release
-        run: npx semantic-release
+        run: pnpx semantic-release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish package
-        run: npm run publish
+        run: pnpm run publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
