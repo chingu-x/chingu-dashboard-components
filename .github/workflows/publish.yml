@@ -11,32 +11,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout code
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Step 2: Install Node.js and pnpm
-      - name: Setup Node.js and pnpm
+      - name: Setup Node.js and npm
         uses: actions/setup-node@v3
         with:
-          node-version: "16" # Use the Node.js version your project needs
-          cache: "pnpm" # Enable caching for pnpm dependencies
+          node-version: "16"
+          cache: "npm"
 
-      - name: Install pnpm
-        run: corepack enable # Corepack manages pnpm automatically with Node.js >=16.10
+      - name: Install dependencies with npm
+        run: npm install
 
-      # Step 3: Install dependencies
-      - name: Install dependencies with pnpm
-        run: pnpm install
-
-      # Step 4: Run semantic-release
       - name: Run semantic-release
-        run: pnpx semantic-release
+        run: npx semantic-release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish package
-        run: pnpm run publish
+        run: npm run publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
