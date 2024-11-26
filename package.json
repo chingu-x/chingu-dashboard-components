@@ -11,17 +11,23 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc && node generate-exports.js",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepublishOnly": "pnpm run build",
+    "publish": "pnpm publish --access public"
   },
   "keywords": [],
   "author": "",
   "license": "GPL-3.0",
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/npm": "^12.0.1",
     "@types/node": "^22.9.3",
     "@types/react": "^18.3.12",
     "@vitejs/plugin-react": "^4.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "semantic-release": "^24.2.0",
     "typescript": "^5.7.2",
     "vite": "^5.4.11"
   },
