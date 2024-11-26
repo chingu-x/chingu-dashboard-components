@@ -12,8 +12,8 @@
     "dev": "vite",
     "build": "vite build && tsc && node generate-exports.js",
     "preview": "vite preview",
-    "prepublishOnly": "pnpm run build",
-    "publish": "pnpm publish --access public"
+    "prepublishOnly": "npm run build",
+    "publish": "npm publish --access public"
   },
   "keywords": [],
   "author": "",
