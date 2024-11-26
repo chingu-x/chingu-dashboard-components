@@ -18,14 +18,14 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "16"
-          cache: "pnpm" 
+          cache: "pnpm"
 
       - name: Install pnpm
         run: npm install -g pnpm
-=
+
       - name: Install dependencies with pnpm
         run: pnpm install
-=
+
       - name: Run semantic-release
         run: pnpx semantic-release
         env:
