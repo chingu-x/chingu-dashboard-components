@@ -23,6 +23,14 @@ jobs:
       - name: Install dependencies with npm
         run: npm install
 
+      - name: Show npm token (for debugging)
+        run: echo "Token is ${{ secrets.NPM_TOKEN }}"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Authenticate with npm
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+
       - name: Publish package
         run: npm run publish
         env:
