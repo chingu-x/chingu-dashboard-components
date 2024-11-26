@@ -1,0 +1,50 @@
+{
+  "name": "chingu-dashboard-components",
+  "version": "0.1.0",
+  "description": "Component library for Chingu dashboard projects",
+  "module": "dist/index.js",
+  "type": "module",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc && node generate-exports.js",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@types/node": "^22.9.3",
+    "@types/react": "^18.3.12",
+    "@vitejs/plugin-react": "^4.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./components/avatar": {
+      "import": "./dist/components/avatar/index.js",
+      "types": "./dist/types/components/avatar/index.d.ts"
+    },
+    "./components/button": {
+      "import": "./dist/components/button/index.js",
+      "types": "./dist/types/components/button/index.d.ts"
+    },
+    "./components/input": {
+      "import": "./dist/components/input/index.js",
+      "types": "./dist/types/components/input/index.d.ts"
+    }
+  }
+}
