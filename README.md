@@ -7,8 +7,14 @@ subject to change (just writing stuff now so I don't forget, will make proper do
 All components will go under components folder. Each component should be in it's own subfolder and be exposed though index.ts file
 Look at the examples to see exact code needed. It's important to follow it exactly the same
 
-Once that's setup, run this command (requires node version > 16) Make sure to do it at the root level of the project
+requires node version > 16
 
-```
-pn build
-```
+Package is setup with semenatic-release for automatic versioning management: https://github.com/semantic-release/semantic-release
+
+TLDR:
+
+Commit messages are important
+
+"fix: your message" <- to trigger patch verion bump
+"feat: your message" <- to trigger minor version bump
+"BREAKING CHANGE: your message" <- to trigger major version bump (im not sure if it actually needs to be in all caps. Will find out later)
