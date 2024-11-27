@@ -1,3 +1,15 @@
+# [0.4.0](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.3.4...v0.4.0) (2024-11-27)
+
+
+### Bug Fixes
+
+* add pre-commit hook to build the package and run generate-exports script ([c57327a](https://github.com/chingu-x/chingu-dashboard-components/commit/c57327a5e2455832f251327f49d7b3abae9e93b9))
+
+
+### Features
+
+* setup husky ([165d6e1](https://github.com/chingu-x/chingu-dashboard-components/commit/165d6e1e435e525136fa1e5eea6f9e03a54f2de4))
+
 ## [0.3.4](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.3.3...v0.3.4) (2024-11-27)
 
 
