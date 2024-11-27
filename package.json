@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "vite build && tsc",
+    "build": "vite build && tsc && node generate-exports.js",
     "preview": "vite preview",
     "prepublishOnly": "npm run build"
   },
