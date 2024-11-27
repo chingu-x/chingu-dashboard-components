@@ -12,8 +12,7 @@
     "dev": "vite",
     "build": "vite build && tsc && node generate-exports.js",
     "preview": "vite preview",
-    "prepublishOnly": "npm run build",
-    "publish-package": "npm publish --access public"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [],
   "author": "",
