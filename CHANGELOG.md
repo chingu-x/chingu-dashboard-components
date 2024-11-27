@@ -1,3 +1,11 @@
+## [0.4.2](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.4.1...v0.4.2) (2024-11-27)
+
+
+### Bug Fixes
+
+* add version ([0b8dab4](https://github.com/chingu-x/chingu-dashboard-components/commit/0b8dab4ac46494cd7259593740a64aadd76b4d97))
+* change to pnpm ([59660a8](https://github.com/chingu-x/chingu-dashboard-components/commit/59660a839f9df71eecf6f27d6ac82b34d7e1d9e9))
+
 ## [0.4.1](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.4.0...v0.4.1) (2024-11-27)
 
 
