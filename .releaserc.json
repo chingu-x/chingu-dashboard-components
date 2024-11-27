@@ -6,6 +6,7 @@
     "@semantic-release/changelog",
     "@semantic-release/github",
     "@semantic-release/npm",
+    "@semantic-release/exec",
     {
       "path": "@semantic-release/exec",
       "cmd": "node generate-exports.js"
