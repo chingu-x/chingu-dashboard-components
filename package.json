@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "pnpm run build",
     "prepare": "husky install"
   },
   "keywords": [],
