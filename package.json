@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "vite build && tsc && node generate-exports.js",
+    "build": "vite build && tsc",
     "preview": "vite preview",
     "prepublishOnly": "npm run build",
     "prepare": "husky install"
@@ -47,6 +47,10 @@
     "./components/avatar": {
       "import": "./dist/components/avatar/index.js",
       "types": "./dist/types/components/avatar/index.d.ts"
+    },
+    "./components/badge": {
+      "import": "./dist/components/badge/index.js",
+      "types": "./dist/types/components/badge/index.d.ts"
     },
     "./components/button": {
       "import": "./dist/components/button/index.js",
