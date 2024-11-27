@@ -2,6 +2,6 @@
 
 // TODO: replace with actual badge component
 
-export default function Avatar() {
+export default function Badge() {
   return <div>ExampleComponent</div>;
 }
