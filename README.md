@@ -16,5 +16,7 @@ TLDR:
 Commit messages are important
 
 "fix: your message" <- to trigger patch verion bump
+
 "feat: your message" <- to trigger minor version bump
+
 "BREAKING CHANGE: your message" <- to trigger major version bump (im not sure if it actually needs to be in all caps. Will find out later)
