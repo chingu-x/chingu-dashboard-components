@@ -2,6 +2,6 @@
 
 // TODO: replace with actual badge component
 
-export default function Badge() {
+export default function Badgse() {
   return <div>ExampleComponent</div>;
 }
