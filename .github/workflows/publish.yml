@@ -26,9 +26,6 @@ jobs:
       - name: Authenticate with npm
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
-      - name: Set up GitHub token for release
-        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
-
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4
         env:
