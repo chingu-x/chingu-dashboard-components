@@ -1,6 +1,6 @@
 {
   "name": "@chingu-x/components",
-  "version": "0.5.1",
+  "version": "0.5.0",
   "description": "Component library for Chingu dashboard projects",
   "module": "dist/index.js",
   "type": "module",
@@ -13,7 +13,7 @@
   "style": "src/styles.css",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && tsc",
+    "build": "vite build && tsc && node copy-types.js",
     "prepublishOnly": "pnpm build",
     "prepare": "husky install"
   },
