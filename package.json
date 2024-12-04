@@ -72,6 +72,10 @@
       "import": "./dist/button/index.js",
       "types": "./dist/types/button/index.d.ts"
     },
+    "./icon-button": {
+      "import": "./dist/icon-button/index.js",
+      "types": "./dist/types/icon-button/index.d.ts"
+    },
     "./input": {
       "import": "./dist/input/index.js",
       "types": "./dist/types/input/index.d.ts"
