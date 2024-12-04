@@ -10,12 +10,12 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && yarn build:css",
+    "build": "tsc && vite build && pnpm build:css",
     "build:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./dist/styles.css",
     "preview": "vite preview",
-    "storybook": "concurrently \"yarn storybook:css\" \"storybook dev -p 6006\"",
+    "storybook": "concurrently \"pnpm storybook:css\" \"storybook dev -p 6006\"",
     "storybook:css": "tailwindcss -w -i ./src/tailwind-entry.css -o ./src/index.css",
-    "build-storybook": "concurrently \"yarn build-storybook:css\" \"storybook build\"",
+    "build-storybook": "concurrently \"pnpm build-storybook:css\" \"storybook build\"",
     "build-storybook:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./src/index.css",
     "prepublishOnly": "pnpm run build",
     "prepare": "husky install"
@@ -36,14 +36,15 @@
     "@storybook/addon-onboarding": "8.4.6",
     "@storybook/addon-themes": "^8.4.6",
     "@storybook/blocks": "8.4.6",
+    "@storybook/manager-api": "^8.4.6",
     "@storybook/react": "8.4.6",
     "@storybook/react-vite": "8.4.6",
     "@storybook/test": "8.4.6",
+    "@storybook/theming": "^8.4.6",
     "@types/node": "^22.9.3",
     "@types/react": "^18.3.12",
     "@vitejs/plugin-react": "^4.3.3",
     "autoprefixer": "^10.4.20",
-    "class-variance-authority": "^0.7.1",
     "concurrently": "^9.1.0",
     "husky": "^9.1.7",
     "postcss": "^8.4.49",
@@ -51,7 +52,6 @@
     "react-dom": "^18.3.1",
     "semantic-release": "^24.2.0",
     "storybook": "8.4.6",
-    "tailwind-merge": "^2.5.5",
     "tailwindcss": "^3.4.15",
     "typescript": "^5.7.2",
     "vite": "^5.4.11"
@@ -60,13 +60,16 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.5"
+  },
   "exports": {
     ".": {
       "import": "./dist/index.js",
       "types": "./dist/types/index.d.ts"
     }
-  },
-  "dependencies": {
-    "@heroicons/react": "^2.2.0"
   }
 }
