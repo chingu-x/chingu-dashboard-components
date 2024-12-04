@@ -13,7 +13,7 @@
   "style": "src/styles.css",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && tsc && node copy-types.js",
+    "build": "vite build && tsc",
     "prepublishOnly": "pnpm build",
     "prepare": "husky install"
   },
