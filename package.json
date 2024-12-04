@@ -6,8 +6,11 @@
   "type": "module",
   "types": "dist/types/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "tailwind.config.js",
+    "src/styles.css"
   ],
+  "style": "src/styles.css",
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc",
@@ -39,6 +42,47 @@
   },
   "peerDependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "tailwindcss": "^3.0.0"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.5"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./styles": {
+      "import": "./dist/style.css",
+      "types": "./dist/global.d.ts"
+    },
+    "./tailwind-config": "./tailwind.config.js",
+    "./avatar": {
+      "import": "./dist/avatar/index.js",
+      "types": "./dist/types/avatar/index.d.ts"
+    },
+    "./badge": {
+      "import": "./dist/badge/index.js",
+      "types": "./dist/types/badge/index.d.ts"
+    },
+    "./button": {
+      "import": "./dist/button/index.js",
+      "types": "./dist/types/button/index.d.ts"
+    },
+    "./icon-button": {
+      "import": "./dist/icon-button/index.js",
+      "types": "./dist/types/icon-button/index.d.ts"
+    },
+    "./input": {
+      "import": "./dist/input/index.js",
+      "types": "./dist/types/input/index.d.ts"
+    },
+    "./types": {
+      "import": "./dist/types/index.js",
+      "types": "./dist/types/types/index.d.ts"
+    }
   }
 }
