@@ -1,6 +1,8 @@
+"use client";
+
 import { cva, type VariantProps } from "class-variance-authority";
 
-import { cn } from "../tw-merge";
+import { cn } from "@/tw-merge";
 
 const button = cva(
   "child:transition-colors flex items-center justify-center gap-x-2 rounded-lg border border-transparent font-semibold capitalize text-base-300 transition-colors disabled:cursor-not-allowed",

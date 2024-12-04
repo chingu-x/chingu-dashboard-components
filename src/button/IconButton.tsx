@@ -1,4 +1,6 @@
-import { cn } from "../tw-merge";
+"use client";
+
+import { cn } from "@/tw-merge";
 
 interface IconButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
