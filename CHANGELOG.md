@@ -1,3 +1,35 @@
+## [0.5.3](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.5.2...v0.5.3) (2024-12-04)
+
+
+### Bug Fixes
+
+* add script back to package.json file and remove from pre-commit hook ([f04eeba](https://github.com/chingu-x/chingu-dashboard-components/commit/f04eeba84545572286bc6d22680727c34f365d5c))
+* add script back to package.json file and remove from pre-commit hook ([4cc5372](https://github.com/chingu-x/chingu-dashboard-components/commit/4cc537253c0eceb339089dcc4045a31badafc180))
+* add script back to package.json file and remove from pre-commit hook ([c19b6b0](https://github.com/chingu-x/chingu-dashboard-components/commit/c19b6b02dcf2fefc521f6d1e5443dc7508e06fcf))
+
+## [0.5.2](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.5.1...v0.5.2) (2024-12-04)
+
+
+### Bug Fixes
+
+* update package.json file ([20bab79](https://github.com/chingu-x/chingu-dashboard-components/commit/20bab79b3884d9b3bcad2c6347c75ea233472dec))
+* update package.json file ([ed8a3b4](https://github.com/chingu-x/chingu-dashboard-components/commit/ed8a3b4d4a58872c1b7990f1c487653bd910c662))
+* update package.json file ([a64a2fd](https://github.com/chingu-x/chingu-dashboard-components/commit/a64a2fd67387228bb9ad333a7ab396964d5a35e1))
+
+## [0.5.1](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.5.0...v0.5.1) (2024-12-04)
+
+
+### Bug Fixes
+
+* include global.d.ts file ([9c8c254](https://github.com/chingu-x/chingu-dashboard-components/commit/9c8c254af5839228b6b16cb1ce03b1c443982f4c))
+* include global.d.ts file ([0bb0e7d](https://github.com/chingu-x/chingu-dashboard-components/commit/0bb0e7d01036277b4f9a4407f458a330c6c1c612))
+* include global.d.ts file ([fe89a58](https://github.com/chingu-x/chingu-dashboard-components/commit/fe89a58af353e64e9cc5efe27cfb3244bc639445))
+
+
+### Reverts
+
+* go back to original semantic release config ([45f939a](https://github.com/chingu-x/chingu-dashboard-components/commit/45f939aeb81a344b4218d05a7b5102f904a8899f))
+
 # [0.5.0](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.4.2...v0.5.0) (2024-12-04)
 
 

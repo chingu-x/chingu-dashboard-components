@@ -1,4 +1,3 @@
 #!/bin/sh
 pnpm build
 node generate-exports.js
-node copy-types.js
