@@ -2,6 +2,10 @@
   "branches": ["main"],
   "plugins": [
     "@semantic-release/commit-analyzer",
+    {
+      "type": "chore",
+      "release": "patch"
+    },
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     "@semantic-release/github",
@@ -13,14 +17,5 @@
         "message": "chore(release): ${nextRelease.version} [skip ci]"
       }
     ]
-  ],
-  "commitAnalyzer": {
-    "preset": "conventionalcommits",
-    "releaseRules": [
-      {
-        "type": "chore",
-        "release": "patch"
-      }
-    ]
-  }
+  ]
 }
