@@ -1,11 +1,15 @@
 {
   "branches": ["main"],
-  "preset": "conventionalcommits",
   "plugins": [
     "@semantic-release/commit-analyzer",
     {
-      "type": "chore",
-      "release": "patch"
+      "preset": "conventionalcommits",
+      "releaseRules": [
+        {
+          "type": "chore",
+          "release": "patch"
+        }
+      ]
     },
     "@semantic-release/release-notes-generator",
     {
