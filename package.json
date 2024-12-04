@@ -6,8 +6,11 @@
   "type": "module",
   "types": "dist/types/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "tailwind.config.js",
+    "src/styles.css"
   ],
+  "style": "src/styles.css",
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc",
@@ -27,37 +30,59 @@
     "@types/node": "^22.9.3",
     "@types/react": "^18.3.12",
     "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
     "husky": "^9.1.7",
+    "postcss": "^8.4.49",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "semantic-release": "^24.2.0",
+    "tailwindcss": "^3.4.15",
     "typescript": "^5.7.2",
     "vite": "^5.4.11"
   },
   "peerDependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "tailwindcss": "^3.0.0"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.5"
   },
   "exports": {
     ".": {
       "import": "./dist/index.js",
       "types": "./dist/types/index.d.ts"
     },
-    "./components/avatar": {
-      "import": "./dist/components/avatar/index.js",
-      "types": "./dist/types/components/avatar/index.d.ts"
+    "./styles": {
+      "import": "./dist/style.css",
+      "types": "./dist/global.d.ts"
     },
-    "./components/badge": {
-      "import": "./dist/components/badge/index.js",
-      "types": "./dist/types/components/badge/index.d.ts"
+    "./tailwind-config": "./tailwind.config.js",
+    "./avatar": {
+      "import": "./dist/avatar/index.js",
+      "types": "./dist/types/avatar/index.d.ts"
     },
-    "./components/button": {
-      "import": "./dist/components/button/index.js",
-      "types": "./dist/types/components/button/index.d.ts"
+    "./badge": {
+      "import": "./dist/badge/index.js",
+      "types": "./dist/types/badge/index.d.ts"
     },
-    "./components/input": {
-      "import": "./dist/components/input/index.js",
-      "types": "./dist/types/components/input/index.d.ts"
+    "./button": {
+      "import": "./dist/button/index.js",
+      "types": "./dist/types/button/index.d.ts"
+    },
+    "./icon-button": {
+      "import": "./dist/icon-button/index.js",
+      "types": "./dist/types/icon-button/index.d.ts"
+    },
+    "./input": {
+      "import": "./dist/input/index.js",
+      "types": "./dist/types/input/index.d.ts"
+    },
+    "./types": {
+      "import": "./dist/types/index.js",
+      "types": "./dist/types/types/index.d.ts"
     }
   }
 }

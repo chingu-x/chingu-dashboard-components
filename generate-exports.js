@@ -2,8 +2,7 @@ import fs from "fs";
 import path from "path";
 
 // Define the root path of your dist and types folders
-const distPath = "./dist/components";
-const typesPath = "./dist/types/components";
+const distPath = "./dist";
 
 // Read all directories in the components folder
 const components = fs.readdirSync(distPath).filter((file) => {
@@ -16,12 +15,17 @@ const exportsObject = {
     import: "./dist/index.js",
     types: "./dist/types/index.d.ts",
   },
+  "./styles": {
+    import: "./dist/style.css",
+    types: "./dist/global.d.ts",
+  },
+  "./tailwind-config": "./tailwind.config.js",
 };
 
 components.forEach((component) => {
-  exportsObject[`./components/${component}`] = {
-    import: `./dist/components/${component}/index.js`,
-    types: `./dist/types/components/${component}/index.d.ts`,
+  exportsObject[`./${component}`] = {
+    import: `./dist/${component}/index.js`,
+    types: `./dist/types/${component}/index.d.ts`,
   };
 });
 
