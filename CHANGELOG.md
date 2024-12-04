@@ -1,3 +1,12 @@
+## [0.5.3](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.5.2...v0.5.3) (2024-12-04)
+
+
+### Bug Fixes
+
+* add script back to package.json file and remove from pre-commit hook ([f04eeba](https://github.com/chingu-x/chingu-dashboard-components/commit/f04eeba84545572286bc6d22680727c34f365d5c))
+* add script back to package.json file and remove from pre-commit hook ([4cc5372](https://github.com/chingu-x/chingu-dashboard-components/commit/4cc537253c0eceb339089dcc4045a31badafc180))
+* add script back to package.json file and remove from pre-commit hook ([c19b6b0](https://github.com/chingu-x/chingu-dashboard-components/commit/c19b6b02dcf2fefc521f6d1e5443dc7508e06fcf))
+
 ## [0.5.2](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.5.1...v0.5.2) (2024-12-04)
 
 
