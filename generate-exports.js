@@ -3,7 +3,6 @@ import path from "path";
 
 // Define the root path of your dist and types folders
 const distPath = "./dist";
-const typesPath = "./dist/types";
 
 // Read all directories in the components folder
 const components = fs.readdirSync(distPath).filter((file) => {
@@ -16,6 +15,11 @@ const exportsObject = {
     import: "./dist/index.js",
     types: "./dist/types/index.d.ts",
   },
+  "./styles": {
+    import: "./dist/style.css",
+    types: "./dist/global.d.ts",
+  },
+  "./tailwind-config": "./tailwind.config.js",
 };
 
 components.forEach((component) => {
