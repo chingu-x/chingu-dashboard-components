@@ -1,5 +1,6 @@
 {
   "branches": ["main"],
+  "preset": "conventionalcommits",
   "plugins": [
     "@semantic-release/commit-analyzer",
     {
@@ -9,25 +10,25 @@
     "@semantic-release/release-notes-generator",
     {
       "preset": "conventionalcommits",
-        "presetConfig": {
-          "types": [
-            {
-              "type": "feat",
-              "section": ":sparkles: Features",
-              "hidden": false
-            },
-            {
-              "type": "fix",
-              "section": ":bug: Fixes",
-              "hidden": false
-            },
-            {
-              "type": "chore",
-              "section": ":repeat: Chore",
-              "hidden": false
-            }
-          ]
-        }
+      "presetConfig": {
+        "types": [
+          {
+            "type": "feat",
+            "section": ":sparkles: Features",
+            "hidden": false
+          },
+          {
+            "type": "fix",
+            "section": ":bug: Fixes",
+            "hidden": false
+          },
+          {
+            "type": "chore",
+            "section": ":repeat: Chore",
+            "hidden": false
+          }
+        ]
+      }
     },
     "@semantic-release/changelog",
     "@semantic-release/github",
