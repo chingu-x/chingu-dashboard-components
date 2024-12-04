@@ -15,6 +15,7 @@
     ]
   ],
   "commitAnalyzer": {
+    "preset": "conventionalcommits",
     "releaseRules": [
       {
         "type": "chore",
