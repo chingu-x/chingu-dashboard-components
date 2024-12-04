@@ -6,7 +6,7 @@
   "type": "module",
   "types": "dist/types/index.d.ts",
   "files": [
-    "dist",
+    "dist/**/*",
     "tailwind.config.js",
     "src/styles.css"
   ],
