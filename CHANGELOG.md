@@ -1,3 +1,12 @@
+## [0.5.2](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.5.1...v0.5.2) (2024-12-04)
+
+
+### Bug Fixes
+
+* update package.json file ([20bab79](https://github.com/chingu-x/chingu-dashboard-components/commit/20bab79b3884d9b3bcad2c6347c75ea233472dec))
+* update package.json file ([ed8a3b4](https://github.com/chingu-x/chingu-dashboard-components/commit/ed8a3b4d4a58872c1b7990f1c487653bd910c662))
+* update package.json file ([a64a2fd](https://github.com/chingu-x/chingu-dashboard-components/commit/a64a2fd67387228bb9ad333a7ab396964d5a35e1))
+
 ## [0.5.1](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.5.0...v0.5.1) (2024-12-04)
 
 
