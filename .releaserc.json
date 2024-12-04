@@ -13,5 +13,13 @@
         "message": "chore(release): ${nextRelease.version} [skip ci]"
       }
     ]
-  ]
+  ],
+  "commitAnalyzer": {
+    "releaseRules": [
+      {
+        "type": "chore",
+        "release": "patch"
+      }
+    ]
+  }
 }
