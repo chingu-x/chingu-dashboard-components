@@ -1,6 +1,6 @@
 {
   "name": "@chingu-x/components",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "Component library for Chingu dashboard projects",
   "module": "dist/index.js",
   "type": "module",
