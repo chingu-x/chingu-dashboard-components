@@ -19,6 +19,7 @@ const exportsObject = {
     import: "./dist/style.css",
     types: "./dist/global.d.ts",
   },
+  "./tailwind-config": "./tailwind.config.js",
 };
 
 components.forEach((component) => {
