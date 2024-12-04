@@ -5,11 +5,13 @@
     "jsx": "react-jsx",
     "declaration": true,
     "declarationDir": "dist/types",
+    "emitDeclarationOnly": false,
     "outDir": "dist",
     "esModuleInterop": true,
     "moduleResolution": "node",
     "skipLibCheck": true,
     "strict": true,
+    "rootDir": "./src"
   },
   "include": [
     "src/**/*.ts",
