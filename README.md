@@ -30,22 +30,6 @@ React: v18 (any minor and patch version)
 Tailwind v3 (any minor and patch version)
 ```
 
-In tailwind.config file, add this code. Exact structure of the config might be different. Adjust as needed
-
-```
-import customTheme from "@chingu-x/components/tailwind-config";
-
-/** @type {import('tailwindcss').Config} */
-export default {
-  presets: [customTheme], <- add this line
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
-```
-
 In the app entry file, add this line
 
 ```
