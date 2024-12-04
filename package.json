@@ -48,7 +48,8 @@
       "types": "./dist/types/index.d.ts"
     },
     "./styles": {
-      "import": "./dist/style.css"
+      "import": "./dist/style.css",
+      "types": "./dist/global.d.ts"
     },
     "./avatar": {
       "import": "./dist/avatar/index.js",

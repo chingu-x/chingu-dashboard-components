@@ -17,6 +17,7 @@ const exportsObject = {
   },
   "./styles": {
     import: "./dist/style.css",
+    types: "./dist/global.d.ts",
   },
 };
 
