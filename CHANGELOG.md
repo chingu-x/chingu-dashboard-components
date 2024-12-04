@@ -1,3 +1,12 @@
+# [0.5.0](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.4.2...v0.5.0) (2024-12-04)
+
+
+### Features
+
+* add button component ([86757fe](https://github.com/chingu-x/chingu-dashboard-components/commit/86757fefb18e2ca67c5158f8f4dea638dadb9350))
+* install tailwind ([8ccd28b](https://github.com/chingu-x/chingu-dashboard-components/commit/8ccd28b384c0001f0d5b4e8ad4ceed626c04be19))
+* setup tailwind config that makes tailwind styles from package recognized ([49df975](https://github.com/chingu-x/chingu-dashboard-components/commit/49df975f0b70b4e025fbeaf1c2eac10b43d163fd))
+
 ## [0.4.2](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.4.1...v0.4.2) (2024-11-27)
 
 
