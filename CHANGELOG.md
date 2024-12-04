@@ -1,3 +1,17 @@
+## [0.5.1](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.5.0...v0.5.1) (2024-12-04)
+
+
+### Bug Fixes
+
+* include global.d.ts file ([9c8c254](https://github.com/chingu-x/chingu-dashboard-components/commit/9c8c254af5839228b6b16cb1ce03b1c443982f4c))
+* include global.d.ts file ([0bb0e7d](https://github.com/chingu-x/chingu-dashboard-components/commit/0bb0e7d01036277b4f9a4407f458a330c6c1c612))
+* include global.d.ts file ([fe89a58](https://github.com/chingu-x/chingu-dashboard-components/commit/fe89a58af353e64e9cc5efe27cfb3244bc639445))
+
+
+### Reverts
+
+* go back to original semantic release config ([45f939a](https://github.com/chingu-x/chingu-dashboard-components/commit/45f939aeb81a344b4218d05a7b5102f904a8899f))
+
 # [0.5.0](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.4.2...v0.5.0) (2024-12-04)
 
 
