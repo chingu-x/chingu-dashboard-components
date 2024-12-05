@@ -19,16 +19,7 @@ type Story = StoryObj<typeof meta>;
 
 const BaseTemplate: Story = {
   args: {
-    children: (
-      <img
-        alt="avatar"
-        src={
-          avatarUrl
-            ? `${avatarUrl}&v=1.2`
-            : "https://png.pngtree.com/png-vector/20210604/ourmid/pngtree-gray-avatar-placeholder-png-image_3416697.jpg"
-        }
-      />
-    ),
+    children: <img alt="avatar" src={avatarUrl} />,
   },
   render: ({ ...args }) => <Avatar {...args} />,
 };

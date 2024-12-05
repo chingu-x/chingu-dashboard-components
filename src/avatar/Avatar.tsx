@@ -9,6 +9,7 @@ interface AvatarProps {
   customClassName?: string;
   onMouseEnter?: () => void;
   onMouseLeave?: () => void;
+  withBorder?: boolean;
 }
 
 export default function Avatar({
@@ -18,11 +19,13 @@ export default function Avatar({
   customClassName,
   onMouseEnter,
   onMouseLeave,
+  withBorder,
 }: AvatarProps) {
   return (
     <div
       className={cn(
         "shrink-1 cursor-pointer overflow-hidden rounded-full px-0",
+        withBorder ? "border border-base-content" : "",
         customClassName
       )}
       onMouseEnter={onMouseEnter}
