@@ -41,7 +41,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const BaseTemplate: Story = {
+const BaseTemplate: Story = {
   render: ({ ...args }) => (
     <Button {...args}>
       <EnvelopeIcon className="h-[18px] w-[18px]" />
