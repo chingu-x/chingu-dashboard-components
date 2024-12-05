@@ -1,15 +1,12 @@
 import fs from "fs";
 import path from "path";
 
-// Define the root path of your dist and types folders
 const distPath = "./dist";
 
-// Read all directories in the components folder
 const components = fs.readdirSync(distPath).filter((file) => {
   return fs.statSync(path.join(distPath, file)).isDirectory();
 });
 
-// Generate exports object
 const exportsObject = {
   ".": {
     import: "./dist/index.js",
@@ -29,7 +26,6 @@ components.forEach((component) => {
   };
 });
 
-// Write the generated exports to the package.json file
 const packageJson = JSON.parse(fs.readFileSync("./package.json", "utf-8"));
 packageJson.exports = exportsObject;
 
