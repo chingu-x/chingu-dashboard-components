@@ -1,16 +1,13 @@
 {
   "name": "@chingu-x/components",
-  "version": "0.5.3",
+  "version": "0.5.5",
   "description": "Component library for Chingu dashboard projects",
   "module": "dist/index.js",
   "type": "module",
   "types": "dist/types/index.d.ts",
   "files": [
-    "dist/**/*",
-    "tailwind.config.js",
-    "src/styles.css"
+    "dist"
   ],
-  "style": "src/styles.css",
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc && node copy-types.js",

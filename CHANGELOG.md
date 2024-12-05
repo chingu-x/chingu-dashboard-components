@@ -1,3 +1,27 @@
+## [0.5.5](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.5.4...v0.5.5) (2024-12-04)
+
+
+### Bug Fixes
+
+* final test ([0cb1e6a](https://github.com/chingu-x/chingu-dashboard-components/commit/0cb1e6a7489e45be42f0f4a1501935fe7a176e17))
+
+## [0.5.4](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.5.3...v0.5.4) (2024-12-04)
+
+
+### Bug Fixes
+
+* test ([c221f2c](https://github.com/chingu-x/chingu-dashboard-components/commit/c221f2c3cee56ed2ed30a0eac0376bd52439b206))
+* test ([816dc32](https://github.com/chingu-x/chingu-dashboard-components/commit/816dc32be0d104724dd0268be48fbc593d435673))
+* test ([5957417](https://github.com/chingu-x/chingu-dashboard-components/commit/5957417506347106da0994b15b53331966a1eae2))
+* test ([c58c6da](https://github.com/chingu-x/chingu-dashboard-components/commit/c58c6dafbf25ebc21dfb982d420dac613c04787d))
+* test ([bd0a727](https://github.com/chingu-x/chingu-dashboard-components/commit/bd0a72754f490c55f0ea8b3eaa4f48473b361d93))
+* test ([a2d00de](https://github.com/chingu-x/chingu-dashboard-components/commit/a2d00debb65c74d5688bd92fe3b65496b9c44c8a))
+* test ([6672592](https://github.com/chingu-x/chingu-dashboard-components/commit/6672592fee615f5525064d851817b8314dc351e0))
+* test ([2505013](https://github.com/chingu-x/chingu-dashboard-components/commit/2505013417761b42b0c54124d2c266ef0f1515e9))
+* test ([a136807](https://github.com/chingu-x/chingu-dashboard-components/commit/a1368075d856bf63df67c8fe37e1cdcabe56a4df))
+* test ([a87b188](https://github.com/chingu-x/chingu-dashboard-components/commit/a87b188826d9ec50801c40bfa39a5205b36bcde5))
+* test ([ed90d4f](https://github.com/chingu-x/chingu-dashboard-components/commit/ed90d4f1a0be40e74a8f029901e320849ca57ccc))
+
 ## [0.5.3](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.5.2...v0.5.3) (2024-12-04)
 
 
