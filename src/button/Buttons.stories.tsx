@@ -51,55 +51,55 @@ export const BaseTemplate: Story = {
   ),
 };
 
-// export const Default = {
-//   ...BaseTemplate,
-// };
+export const Default = {
+  ...BaseTemplate,
+};
 
-// export const Primary = {
-//   ...BaseTemplate,
-//   args: {
-//     variant: "primary",
-//   },
-// };
+export const Primary = {
+  ...BaseTemplate,
+  args: {
+    variant: "primary",
+  },
+};
 
-// export const Secondary = {
-//   ...BaseTemplate,
-//   args: {
-//     variant: "secondary",
-//   },
-// };
+export const Secondary = {
+  ...BaseTemplate,
+  args: {
+    variant: "secondary",
+  },
+};
 
-// export const Accent = {
-//   ...BaseTemplate,
-//   args: {
-//     variant: "accent",
-//   },
-// };
+export const Accent = {
+  ...BaseTemplate,
+  args: {
+    variant: "accent",
+  },
+};
 
-// export const Neutral = {
-//   ...BaseTemplate,
-//   args: {
-//     variant: "neutral",
-//   },
-// };
+export const Neutral = {
+  ...BaseTemplate,
+  args: {
+    variant: "neutral",
+  },
+};
 
-// export const Error = {
-//   ...BaseTemplate,
-//   args: {
-//     variant: "error",
-//   },
-// };
+export const Error = {
+  ...BaseTemplate,
+  args: {
+    variant: "error",
+  },
+};
 
-// export const Link = {
-//   ...BaseTemplate,
-//   args: {
-//     variant: "link",
-//   },
-// };
+export const Link = {
+  ...BaseTemplate,
+  args: {
+    variant: "link",
+  },
+};
 
-// export const Outline = {
-//   ...BaseTemplate,
-//   args: {
-//     variant: "outline",
-//   },
-// };
+export const Outline = {
+  ...BaseTemplate,
+  args: {
+    variant: "outline",
+  },
+};

@@ -3,8 +3,6 @@
     "target": "ESNext",
     "module": "ESNext",
     "jsx": "react-jsx",
-    "declaration": true,
-    "declarationDir": "dist/types",
     "emitDeclarationOnly": false,
     "outDir": "dist",
     "esModuleInterop": true,
@@ -13,10 +11,6 @@
     "strict": true,
     "rootDir": "./src"
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/global.d.ts"
-  ],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/global.d.ts"],
   "exclude": ["node_modules", "dist"]
 }
