@@ -84,6 +84,10 @@
       "import": "./dist/avatar/index.js",
       "types": "./dist/types/avatar/index.d.ts"
     },
+    "./avatarGroup": {
+      "import": "./dist/avatarGroup/index.js",
+      "types": "./dist/types/avatarGroup/index.d.ts"
+    },
     "./badge": {
       "import": "./dist/badge/index.js",
       "types": "./dist/types/badge/index.d.ts"
