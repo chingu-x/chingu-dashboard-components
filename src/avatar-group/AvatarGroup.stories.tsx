@@ -30,14 +30,14 @@ type Story = StoryObj<typeof AvatarGroup>;
 export const AFewMembers: Story = {
   args: {
     children: [
-      <Avatar key={1} width={24} height={24} withBorder>
-        <img alt="avatar" src={avatarUrl} />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
-      <Avatar key={2} width={24} height={24} withBorder>
-        <img alt="avatar" src={avatarUrl} />
+      <Avatar key={2} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
-      <Avatar key={3} width={24} height={24} withBorder>
-        <img alt="avatar" src={avatarUrl} />
+      <Avatar key={3} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
     ],
   },
@@ -46,8 +46,8 @@ export const AFewMembers: Story = {
 export const SingleMember: Story = {
   args: {
     children: [
-      <Avatar key={1} width={24} height={24} withBorder>
-        <img alt="avatar" src={avatarUrl} />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
     ],
   },
@@ -56,26 +56,26 @@ export const SingleMember: Story = {
 export const ManyMembers: Story = {
   args: {
     children: [
-      <Avatar key={1} width={24} height={24} withBorder>
-        <img alt="avatar" src={avatarUrl} />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
-      <Avatar key={1} width={24} height={24} withBorder>
-        <img alt="avatar" src={avatarUrl} />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
-      <Avatar key={1} width={24} height={24} withBorder>
-        <img alt="avatar" src={avatarUrl} />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
-      <Avatar key={1} width={24} height={24} withBorder>
-        <img alt="avatar" src={avatarUrl} />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
-      <Avatar key={1} width={24} height={24} withBorder>
-        <img alt="avatar" src={avatarUrl} />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
-      <Avatar key={1} width={24} height={24} withBorder>
-        <img alt="avatar" src={avatarUrl} />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
-      <Avatar key={1} width={24} height={24} withBorder>
-        <img alt="avatar" src={avatarUrl} />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
     ],
   },
@@ -84,8 +84,8 @@ export const ManyMembers: Story = {
 export const Placeholder: Story = {
   args: {
     children: [
-      <Avatar key={1} width={24} height={24} withBorder>
-        <img alt="avatar" src={placeholder} />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={placeholder} />
       </Avatar>,
     ],
   },
@@ -94,14 +94,14 @@ export const Placeholder: Story = {
 export const MixedImages: Story = {
   args: {
     children: [
-      <Avatar key={1} width={24} height={24} withBorder>
-        <img alt="avatar" src={avatarUrl} />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
-      <Avatar key={1} width={24} height={24} withBorder>
-        <img alt="avatar" src={placeholder} />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={placeholder} />
       </Avatar>,
-      <Avatar key={1} width={24} height={24} withBorder>
-        <img alt="avatar" src={avatarUrl} />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
     ],
   },

@@ -4,8 +4,6 @@ import { cn } from "../tw-merge";
 
 interface AvatarProps {
   children: React.ReactNode;
-  width?: number;
-  height?: number;
   customClassName?: string;
   onMouseEnter?: () => void;
   onMouseLeave?: () => void;
@@ -14,8 +12,6 @@ interface AvatarProps {
 
 export default function Avatar({
   children,
-  width = 24,
-  height = 24,
   customClassName,
   onMouseEnter,
   onMouseLeave,
@@ -24,16 +20,14 @@ export default function Avatar({
   return (
     <div
       className={cn(
-        "shrink-1 cursor-pointer overflow-hidden rounded-full px-0",
+        "shrink-1 cursor-pointer overflow-hidden rounded-full px-0 bg-base-200",
         withBorder ? "border border-base-content" : "",
         customClassName
       )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <div className="bg-base-200" style={{ width, height }}>
-        {children}
-      </div>
+      {children}
     </div>
   );
 }

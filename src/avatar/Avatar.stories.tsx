@@ -17,13 +17,23 @@ const meta: Meta<typeof Avatar> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-const BaseTemplate: Story = {
+export const Default: Story = {
   args: {
-    children: <img alt="avatar" src={avatarUrl} />,
+    children: <img width={24} height={24} alt="avatar" src={avatarUrl} />,
   },
   render: ({ ...args }) => <Avatar {...args} />,
 };
 
-export const Default: Story = {
-  ...BaseTemplate,
+export const SM: Story = {
+  args: {
+    children: <img width={16} height={16} alt="avatar" src={avatarUrl} />,
+  },
+  render: ({ ...args }) => <Avatar {...args} />,
+};
+
+export const XXL: Story = {
+  args: {
+    children: <img width={48} height={48} alt="avatar" src={avatarUrl} />,
+  },
+  render: ({ ...args }) => <Avatar {...args} />,
 };
