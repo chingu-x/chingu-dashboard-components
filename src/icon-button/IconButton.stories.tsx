@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { EllipsisVerticalIcon } from "@heroicons/react/24/solid";
 import IconButton from "./IconButton";
 
-const meta = {
+const meta: Meta<typeof IconButton> = {
   title: "Components/Buttons/Icon Button",
   component: IconButton,
   parameters: {
@@ -10,7 +10,7 @@ const meta = {
   },
   tags: ["autodocs"],
   argTypes: {},
-} satisfies Meta<typeof IconButton>;
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -23,6 +23,6 @@ const BaseTemplate: Story = {
   render: ({ ...args }) => <IconButton {...args} />,
 };
 
-export const Default = {
+export const Default: Story = {
   ...BaseTemplate,
 };

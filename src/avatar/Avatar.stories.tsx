@@ -4,7 +4,7 @@ import Avatar from "./Avatar";
 const avatarUrl =
   "https://gravatar.com/avatar/3bfaef00e02a22f99e17c66e7a9fdd31?s=400&d=identicon&r=x";
 
-const meta = {
+const meta: Meta<typeof Avatar> = {
   title: "Components/Data display/Avatar",
   component: Avatar,
   parameters: {
@@ -12,18 +12,28 @@ const meta = {
   },
   tags: ["autodocs"],
   argTypes: {},
-} satisfies Meta<typeof Avatar>;
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-const BaseTemplate: Story = {
+export const Default: Story = {
   args: {
-    children: <img alt="avatar" src={avatarUrl} />,
+    children: <img width={24} height={24} alt="avatar" src={avatarUrl} />,
   },
   render: ({ ...args }) => <Avatar {...args} />,
 };
 
-export const Default = {
-  ...BaseTemplate,
+export const SM: Story = {
+  args: {
+    children: <img width={16} height={16} alt="avatar" src={avatarUrl} />,
+  },
+  render: ({ ...args }) => <Avatar {...args} />,
+};
+
+export const XXL: Story = {
+  args: {
+    children: <img width={48} height={48} alt="avatar" src={avatarUrl} />,
+  },
+  render: ({ ...args }) => <Avatar {...args} />,
 };
