@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { EnvelopeIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
 import Button from "./Button";
 
-const meta = {
+const meta: Meta<typeof Button> = {
   title: "Components/Buttons/Text Button",
   component: Button,
   parameters: {
@@ -36,7 +36,7 @@ const meta = {
       control: "boolean",
     },
   },
-} satisfies Meta<typeof Button>;
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -51,53 +51,53 @@ const BaseTemplate: Story = {
   ),
 };
 
-export const Default = {
+export const Default: Story = {
   ...BaseTemplate,
 };
 
-export const Primary = {
+export const Primary: Story = {
   ...BaseTemplate,
   args: {
     variant: "primary",
   },
 };
 
-export const Secondary = {
+export const Secondary: Story = {
   ...BaseTemplate,
   args: {
     variant: "secondary",
   },
 };
 
-export const Accent = {
+export const Accent: Story = {
   ...BaseTemplate,
   args: {
     variant: "accent",
   },
 };
 
-export const Neutral = {
+export const Neutral: Story = {
   ...BaseTemplate,
   args: {
     variant: "neutral",
   },
 };
 
-export const Error = {
+export const Error: Story = {
   ...BaseTemplate,
   args: {
     variant: "error",
   },
 };
 
-export const Link = {
+export const Link: Story = {
   ...BaseTemplate,
   args: {
     variant: "link",
   },
 };
 
-export const Outline = {
+export const Outline: Story = {
   ...BaseTemplate,
   args: {
     variant: "outline",

@@ -8,7 +8,7 @@ const placeholder =
 const avatarUrl =
   "https://gravatar.com/avatar/3bfaef00e02a22f99e17c66e7a9fdd31?s=400&d=identicon&r=x";
 
-const meta = {
+const meta: Meta<typeof AvatarGroup> = {
   title: "Components/Data display/Avatar Group",
   component: AvatarGroup,
   parameters: {
@@ -22,7 +22,7 @@ const meta = {
       </div>
     ),
   ],
-} satisfies Meta<typeof AvatarGroup>;
+};
 
 export default meta;
 type Story = StoryObj<typeof AvatarGroup>;
