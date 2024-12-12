@@ -20,7 +20,7 @@ export default function Avatar({
   return (
     <div
       className={cn(
-        "shrink-1 cursor-pointer overflow-hidden rounded-full px-0 bg-base-200",
+        "shrink-1 cursor-pointer overflow-hidden rounded-full px-0 bg-base-200 h-fit w-fit",
         withBorder ? "border border-base-content" : "",
         customClassName
       )}
