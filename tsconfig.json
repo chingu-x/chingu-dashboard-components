@@ -5,13 +5,15 @@
     "jsx": "react-jsx",
     "declaration": true,
     "declarationDir": "dist/types",
-    "emitDeclarationOnly": false,
     "outDir": "dist",
     "esModuleInterop": true,
     "moduleResolution": "node",
     "skipLibCheck": true,
-    "strict": true
+    "strict": true,
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/global.d.ts"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+  ],
   "exclude": ["node_modules", "dist"]
 }
