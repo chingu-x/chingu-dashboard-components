@@ -28,7 +28,7 @@ const meta: Meta<typeof Button> = {
       description: "How large should the button be?",
       defaultValue: { summary: "md" },
       control: "select",
-      options: ["sm", "md", "lg", "xl", "xxl"],
+      options: ["xs", "sm", "md", "lg", "xl", "xxl"],
     },
     disabled: {
       description: "Is it disabled?",
