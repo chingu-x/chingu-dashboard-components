@@ -1,3 +1,10 @@
+## [0.5.6](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.5.5...v0.5.6) (2024-12-05)
+
+
+### Bug Fixes
+
+* test ([b079921](https://github.com/chingu-x/chingu-dashboard-components/commit/b07992142457ff309ad5e6e60f00889b6b82248e))
+
 ## [0.5.5](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.5.4...v0.5.5) (2024-12-04)
 
 
