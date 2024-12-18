@@ -1,3 +1,30 @@
+# [0.6.0](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.5.6...v0.6.0) (2024-12-13)
+
+
+### Bug Fixes
+
+* clean up tailwind.config ([ef69583](https://github.com/chingu-x/chingu-dashboard-components/commit/ef69583ed5d20c0bb4cd3c3e7939d887bf124549))
+* fix avatar component ([122064c](https://github.com/chingu-x/chingu-dashboard-components/commit/122064c273c26a85f1b22a9a280b13b2edf677ea))
+* fix avatat height and width ([71c6694](https://github.com/chingu-x/chingu-dashboard-components/commit/71c6694648be9cfb1c6722c6cf3c300a6b265a4a))
+* fix type error in stories ([0871267](https://github.com/chingu-x/chingu-dashboard-components/commit/08712674211ee54bba9dadc507b52fa6c01e8614))
+* fix types for button to make intellisense work on button props ([5a31f94](https://github.com/chingu-x/chingu-dashboard-components/commit/5a31f947bdbe54576361c0532b3726929b04efe4))
+* fix typescript issues, update packages, use kebab-casing folder naming, revert ts config ([0a19af9](https://github.com/chingu-x/chingu-dashboard-components/commit/0a19af903c53be75a83fe3ee86c031b032b27a7b))
+
+
+### Features
+
+* add avatar ([e396ce1](https://github.com/chingu-x/chingu-dashboard-components/commit/e396ce1369901daba8b7945733a839ddd81dcbf4))
+* add avatrt group ([325d594](https://github.com/chingu-x/chingu-dashboard-components/commit/325d594a27b9b8c9139bfbececaaf9e0274821c4))
+* add base Icon Button ([513f9db](https://github.com/chingu-x/chingu-dashboard-components/commit/513f9db9257f63c2ec3dc5f453703232040f45de))
+* add buttom (comment out part of a story for now) ([df0cd64](https://github.com/chingu-x/chingu-dashboard-components/commit/df0cd64caedc0e850873283a5a1ede08af4a323f))
+
+## [0.5.6](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.5.5...v0.5.6) (2024-12-05)
+
+
+### Bug Fixes
+
+* test ([b079921](https://github.com/chingu-x/chingu-dashboard-components/commit/b07992142457ff309ad5e6e60f00889b6b82248e))
+
 ## [0.5.5](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.5.4...v0.5.5) (2024-12-04)
 
 

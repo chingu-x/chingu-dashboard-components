@@ -1,7 +1,33 @@
 "use client";
 
-// TODO: replace with actual avatar component
+import { cn } from "../tw-merge";
 
-export default function Avatar() {
-  return <div className="text-red-700">ExampleComponent</div>;
+interface AvatarProps {
+  children: React.ReactNode;
+  customClassName?: string;
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
+  withBorder?: boolean;
+}
+
+export default function Avatar({
+  children,
+  customClassName,
+  onMouseEnter,
+  onMouseLeave,
+  withBorder,
+}: AvatarProps) {
+  return (
+    <div
+      className={cn(
+        "shrink-1 cursor-pointer overflow-hidden rounded-full px-0 bg-base-200 h-fit w-fit",
+        withBorder ? "border border-base-content" : "",
+        customClassName
+      )}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      {children}
+    </div>
+  );
 }
