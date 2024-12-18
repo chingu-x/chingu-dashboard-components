@@ -77,6 +77,10 @@
       "import": "./dist/input/index.js",
       "types": "./dist/types/input/index.d.ts"
     },
+    "./tooltip": {
+      "import": "./dist/tooltip/index.js",
+      "types": "./dist/types/tooltip/index.d.ts"
+    },
     "./types": {
       "import": "./dist/types/index.js",
       "types": "./dist/types/types/index.d.ts"
