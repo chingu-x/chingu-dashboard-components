@@ -1,3 +1,15 @@
+# [0.7.0](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.6.0...v0.7.0) (2024-12-19)
+
+
+### Bug Fixes
+
+* fix type error in tooltip stories ([6bee259](https://github.com/chingu-x/chingu-dashboard-components/commit/6bee259fed05a15d765d17bbf0821f63d5e86630))
+
+
+### Features
+
+* add tooltip ([11b6c3f](https://github.com/chingu-x/chingu-dashboard-components/commit/11b6c3ff7b7adfd2b251d5a8ec71d27a8d8d39b1))
+
 # [0.6.0](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.5.6...v0.6.0) (2024-12-13)
 
 
