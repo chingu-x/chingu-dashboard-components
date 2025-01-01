@@ -1,17 +1,17 @@
 import React from "react";
-import { Label } from "../../label";
-import { cn } from "../../../tw-merge";
+import { Label } from "../label";
+import { cn } from "../../tw-merge";
 
 type groupLayoutTypes = "vertical" | "horizontal" | "rating";
 
-export interface RadioGroupItemProps
+export interface RadioInputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   id: string;
   label: string | JSX.Element;
   groupLayout?: groupLayoutTypes;
 }
 
-const RadioGroupItem = React.forwardRef<HTMLInputElement, RadioGroupItemProps>(
+const RadioInput = React.forwardRef<HTMLInputElement, RadioInputProps>(
   ({ id, label, groupLayout = "vertical", className, ...props }, ref) => (
     <div
       className={cn(
@@ -43,6 +43,6 @@ const RadioGroupItem = React.forwardRef<HTMLInputElement, RadioGroupItemProps>(
   )
 );
 
-RadioGroupItem.displayName = "RadioGroupItem";
+RadioInput.displayName = "RadioInput";
 
-export default RadioGroupItem;
+export default RadioInput;

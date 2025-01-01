@@ -1,10 +1,8 @@
 import React from "react";
-import RadioGroupItem, {
-  type RadioGroupItemProps,
-} from "../radio-group-item/RadioGroupItem";
+import RadioInput, { RadioInputProps } from "../../radio-input/RadioInput";
 
 interface RadioGroupProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  options: RadioGroupItemProps[];
+  options: RadioInputProps[];
   leftTitle: string;
   rightTitle: string;
 }
@@ -20,7 +18,7 @@ const RadioGroup = React.forwardRef<HTMLInputElement, RadioGroupProps>(
         {/* RADIO GROUP */}
         <div className="flex items-center justify-between px-6">
           {options.map(({ id, value, label }) => (
-            <RadioGroupItem
+            <RadioInput
               key={id}
               id={id}
               value={value}
