@@ -911,6 +911,26 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1327,6 +1347,11 @@ video {
   color: rgb(var(--neutral-focus) / var(--tw-text-opacity, 1));
 }
 
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(var(--primary) / var(--tw-text-opacity, 1));
+}
+
 .text-success {
   --tw-text-opacity: 1;
   color: rgb(var(--success) / var(--tw-text-opacity, 1));
@@ -1335,6 +1360,19 @@ video {
 .text-warning {
   --tw-text-opacity: 1;
   color: rgb(var(--warning) / var(--tw-text-opacity, 1));
+}
+
+.text-info {
+  --tw-text-opacity: 1;
+  color: rgb(var(--info) / var(--tw-text-opacity, 1));
+}
+
+.opacity-25 {
+  opacity: 0.25;
+}
+
+.opacity-75 {
+  opacity: 0.75;
 }
 
 .shadow-\[0px_0px_0px_3px\] {
@@ -1650,22 +1688,6 @@ input::-ms-clear {
   content: var(--tw-content);
 }
 
-.last\:flex:last-child {
-  display: flex;
-}
-
-.last\:w-full:last-child {
-  width: 100%;
-}
-
-.last\:flex-col:last-child {
-  flex-direction: column;
-}
-
-.last\:gap-y-10:last-child {
-  row-gap: 2.5rem;
-}
-
 .hover\:border-base-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(var(--base-300) / var(--tw-border-opacity, 1));
@@ -1935,22 +1957,6 @@ input::-ms-clear {
 .peer:disabled:checked ~ .peer-disabled\:peer-checked\:shadow-neutral {
   --tw-shadow-color: rgb(var(--neutral) / 1);
   --tw-shadow: var(--tw-shadow-colored);
-}
-
-.\[\&\:last-child\]\:flex:last-child {
-  display: flex;
-}
-
-.\[\&\:last-child\]\:w-full:last-child {
-  width: 100%;
-}
-
-.\[\&\:last-child\]\:flex-col:last-child {
-  flex-direction: column;
-}
-
-.\[\&\:last-child\]\:gap-y-10:last-child {
-  row-gap: 2.5rem;
 }
 
 .\[\&\>\*\]\:mx-\[14px\]>* {
