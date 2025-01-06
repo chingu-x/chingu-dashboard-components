@@ -911,16 +911,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin {
-  animation: spin 1s linear infinite;
-}
-
 @keyframes pulse {
   50% {
     opacity: .5;
@@ -929,6 +919,16 @@ video {
 
 .animate-pulse {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
 }
 
 .cursor-pointer {
@@ -1342,6 +1342,11 @@ video {
   color: rgb(var(--error) / var(--tw-text-opacity, 1));
 }
 
+.text-info {
+  --tw-text-opacity: 1;
+  color: rgb(var(--info) / var(--tw-text-opacity, 1));
+}
+
 .text-neutral-focus {
   --tw-text-opacity: 1;
   color: rgb(var(--neutral-focus) / var(--tw-text-opacity, 1));
@@ -1360,11 +1365,6 @@ video {
 .text-warning {
   --tw-text-opacity: 1;
   color: rgb(var(--warning) / var(--tw-text-opacity, 1));
-}
-
-.text-info {
-  --tw-text-opacity: 1;
-  color: rgb(var(--info) / var(--tw-text-opacity, 1));
 }
 
 .opacity-25 {

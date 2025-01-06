@@ -1,6 +1,7 @@
 export { default as TextInput } from "./text-input/TextInput";
 export { default as Textarea } from "./text-area/TextArea";
 export { default as Label } from "./label/Label";
+export { default as LabelContent } from "./label-content/LabelContent";
 
 export { default as CheckboxInput } from "./checkbox-input/CheckboxInput";
 export { default as CheckboxGroupVertical } from "./checkbox-group/checkbox-group-vertical/CheckboxGroupVertical";
