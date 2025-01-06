@@ -89,6 +89,14 @@
       "import": "./dist/badge/index.js",
       "types": "./dist/types/badge/index.d.ts"
     },
+    "./banner": {
+      "import": "./dist/banner/index.js",
+      "types": "./dist/types/banner/index.d.ts"
+    },
+    "./banner-container": {
+      "import": "./dist/banner-container/index.js",
+      "types": "./dist/types/banner-container/index.d.ts"
+    },
     "./button": {
       "import": "./dist/button/index.js",
       "types": "./dist/types/button/index.d.ts"
