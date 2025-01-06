@@ -1,7 +1,7 @@
 import React from "react";
 import { CheckIcon } from "@heroicons/react/24/outline";
 
-import { Label } from "../label";
+import Label from "../label/Label";
 import { cn } from "../../tw-merge";
 
 export interface CheckboxInputProps

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import RadioGroupVertical from "./RadioGroupVertical";
-import { Label } from "../../label";
+import Label from "../../label/Label";
 
 const options = [
   {

@@ -5,8 +5,8 @@ import { cn } from "../../tw-merge";
 
 import { Button } from "../../button";
 import { IconButton } from "../../icon-button";
-import { Label } from "../label";
-import { FieldMessage } from "../field-message";
+import Label from "../label/Label";
+import FieldMessage from "../field-message/FieldMessage";
 
 interface TextInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   id: string;

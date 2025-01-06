@@ -1,4 +1,4 @@
-import { FormBanner } from "../form-banner";
+import FormBanner from "../form-banner/FormBanner";
 
 interface BaseFormPageProps {
   title: string;

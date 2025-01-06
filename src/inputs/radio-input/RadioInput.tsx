@@ -1,6 +1,6 @@
 import React from "react";
-import { Label } from "../label";
 import { cn } from "../../tw-merge";
+import Label from "../label/Label";
 
 type groupLayoutTypes = "vertical" | "horizontal" | "rating";
 

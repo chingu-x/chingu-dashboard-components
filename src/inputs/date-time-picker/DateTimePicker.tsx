@@ -3,7 +3,7 @@ import DatePicker, { type ReactDatePickerProps } from "react-datepicker";
 import { CalendarDaysIcon } from "@heroicons/react/24/outline";
 
 import "react-datepicker/dist/react-datepicker.css";
-import { TextInput } from "../text-input";
+import TextInput from "../text-input/TextInput";
 
 export interface DatePickerInputProps extends ReactDatePickerProps {
   id: string;

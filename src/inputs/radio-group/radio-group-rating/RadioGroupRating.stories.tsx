@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import RadioGroupRating from "./RadioGroupRating";
-import { Label } from "../../label";
+import Label from "../../label/Label";
 
 const options = [
   {

@@ -6,8 +6,8 @@ import React, {
   useState,
 } from "react";
 
-import { Label } from "../label";
-import { FieldMessage } from "../field-message";
+import Label from "../label/Label";
+import FieldMessage from "../field-message/FieldMessage";
 
 import { cn } from "../../tw-merge";
 

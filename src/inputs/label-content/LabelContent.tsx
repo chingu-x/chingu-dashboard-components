@@ -1,5 +1,5 @@
 import { getTextInCurlyBrackets } from "../../helpers/getTextInCurlyBrackets";
-import { LabelIcon } from "../label-icon";
+import LabelIcon from "../label-icon/LabelIcon";
 
 interface CustomLabelProps {
   text: string;

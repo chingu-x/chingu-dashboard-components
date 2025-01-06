@@ -1,9 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import BaseFormPage from "./BaseFormPage";
 import { Button } from "../../button";
-import { FormInputContainer } from "../form-input-container";
-import { Label } from "../../inputs/label";
-import Textarea from "../../inputs/text-area/TextArea";
+import FormInputContainer from "../form-input-container/FormInputContainer";
+import { Textarea, Label } from "../../inputs";
 
 const meta = {
   title: "Components/Form/BaseFormPage",

@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import FormInputContainer from "./FormInputContainer";
-import { Label } from "../../inputs/label";
-import Textarea from "../../inputs/text-area/TextArea";
+import { Label, Textarea } from "../../inputs/";
 
 const meta = {
   title: "Components/Form/FormInputContainer",
