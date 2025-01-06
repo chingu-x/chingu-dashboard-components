@@ -111,6 +111,10 @@
       "import": "./dist/inputs/index.js",
       "types": "./dist/types/inputs/index.d.ts"
     },
+    "./spinner": {
+      "import": "./dist/spinner/index.js",
+      "types": "./dist/types/spinner/index.d.ts"
+    },
     "./tooltip": {
       "import": "./dist/tooltip/index.js",
       "types": "./dist/types/tooltip/index.d.ts"
