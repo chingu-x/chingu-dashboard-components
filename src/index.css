@@ -704,6 +704,11 @@ video {
   grid-column: span 2 / span 2;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -757,6 +762,10 @@ video {
   height: fit-content;
 }
 
+.h-\[1\.125rem\] {
+  height: 1.125rem;
+}
+
 .max-h-\[320px\] {
   max-height: 320px;
 }
@@ -802,8 +811,24 @@ video {
   width: 100%;
 }
 
+.w-\[1000px\] {
+  width: 1000px;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.min-w-\[75px\] {
+  min-width: 75px;
+}
+
 .max-w-\[700px\] {
   max-width: 700px;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .shrink-0 {
@@ -936,6 +961,10 @@ video {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-base-content {
   --tw-border-opacity: 1;
   border-color: rgb(var(--base-content) / var(--tw-border-opacity, 1));
@@ -1028,6 +1057,16 @@ video {
 .bg-warning-content {
   --tw-bg-opacity: 1;
   background-color: rgb(var(--warning-content) / var(--tw-bg-opacity, 1));
+}
+
+.bg-neutral {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--neutral) / var(--tw-bg-opacity, 1));
+}
+
+.bg-success {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--success) / var(--tw-bg-opacity, 1));
 }
 
 .p-2 {
@@ -1146,6 +1185,11 @@ video {
 .py-\[4px\] {
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .text-left {
@@ -1310,6 +1354,21 @@ video {
   top: 100%;
 }
 
+.after\:-z-10::after {
+  content: var(--tw-content);
+  z-index: -10;
+}
+
+.after\:h-\[7px\]::after {
+  content: var(--tw-content);
+  height: 7px;
+}
+
+.after\:w-full::after {
+  content: var(--tw-content);
+  width: 100%;
+}
+
 .after\:-translate-x-1\/2::after {
   content: var(--tw-content);
   --tw-translate-x: -50%;
@@ -1370,9 +1429,19 @@ video {
   border-top-color: transparent;
 }
 
+.after\:bg-base-100::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--base-100) / var(--tw-bg-opacity, 1));
+}
+
 .after\:content-\[\'\'\]::after {
   --tw-content: '';
   content: var(--tw-content);
+}
+
+.last\:flex-none:last-child {
+  flex: none;
 }
 
 .hover\:bg-accent-focus:hover {
