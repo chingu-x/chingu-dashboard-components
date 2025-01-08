@@ -77,6 +77,10 @@
       "types": "./dist/global.d.ts"
     },
     "./tailwind-config": "./tailwind.config.js",
+    "./alert": {
+      "import": "./dist/alert/index.js",
+      "types": "./dist/types/alert/index.d.ts"
+    },
     "./avatar": {
       "import": "./dist/avatar/index.js",
       "types": "./dist/types/avatar/index.d.ts"
