@@ -704,11 +704,6 @@ video {
   grid-column: span 2 / span 2;
 }
 
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -737,6 +732,10 @@ video {
   height: 1.5rem;
 }
 
+.h-\[1\.125rem\] {
+  height: 1.125rem;
+}
+
 .h-\[18px\] {
   height: 18px;
 }
@@ -762,10 +761,6 @@ video {
   height: fit-content;
 }
 
-.h-\[1\.125rem\] {
-  height: 1.125rem;
-}
-
 .max-h-\[320px\] {
   max-height: 320px;
 }
@@ -776,6 +771,14 @@ video {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-\[1000px\] {
+  width: 1000px;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .w-\[138px\] {
@@ -809,14 +812,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[1000px\] {
-  width: 1000px;
-}
-
-.w-\[100px\] {
-  width: 100px;
 }
 
 .min-w-\[75px\] {
@@ -1039,6 +1034,11 @@ video {
   background-color: rgb(var(--info-content) / var(--tw-bg-opacity, 1));
 }
 
+.bg-neutral {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--neutral) / var(--tw-bg-opacity, 1));
+}
+
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(var(--primary) / var(--tw-bg-opacity, 1));
@@ -1049,6 +1049,11 @@ video {
   background-color: rgb(var(--secondary) / var(--tw-bg-opacity, 1));
 }
 
+.bg-success {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--success) / var(--tw-bg-opacity, 1));
+}
+
 .bg-success-content {
   --tw-bg-opacity: 1;
   background-color: rgb(var(--success-content) / var(--tw-bg-opacity, 1));
@@ -1057,16 +1062,6 @@ video {
 .bg-warning-content {
   --tw-bg-opacity: 1;
   background-color: rgb(var(--warning-content) / var(--tw-bg-opacity, 1));
-}
-
-.bg-neutral {
-  --tw-bg-opacity: 1;
-  background-color: rgb(var(--neutral) / var(--tw-bg-opacity, 1));
-}
-
-.bg-success {
-  --tw-bg-opacity: 1;
-  background-color: rgb(var(--success) / var(--tw-bg-opacity, 1));
 }
 
 .p-2 {
@@ -1187,11 +1182,6 @@ video {
   padding-bottom: 4px;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -1222,6 +1212,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
