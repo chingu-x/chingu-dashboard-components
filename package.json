@@ -113,6 +113,10 @@
       "import": "./dist/input/index.js",
       "types": "./dist/types/input/index.d.ts"
     },
+    "./stepper": {
+      "import": "./dist/stepper/index.js",
+      "types": "./dist/types/stepper/index.d.ts"
+    },
     "./tooltip": {
       "import": "./dist/tooltip/index.js",
       "types": "./dist/types/tooltip/index.d.ts"
