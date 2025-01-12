@@ -1,0 +1,111 @@
+import type { Meta, StoryObj } from "@storybook/react";
+import Navbar from "./Navbar";
+import { ModeToggleButton } from "../../mode-toggle-button";
+import { Button } from "../../button";
+import { Bell } from "../bell";
+import { Avatar } from "../../avatar";
+import { DropDown } from "../drop-down";
+
+const avatarUrl =
+  "https://gravatar.com/avatar/3bfaef00e02a22f99e17c66e7a9fdd31?s=400&d=identicon&r=x";
+
+const meta = {
+  title: "Components/Layout/Navbar",
+  component: Navbar,
+  tags: ["autodocs"],
+} satisfies Meta<typeof Navbar>;
+
+export default meta;
+type Story = StoryObj<typeof Navbar>;
+
+export const LoggedOut: Story = {
+  args: {
+    logo: (
+      <a
+        href={"/"}
+        className="flex flex-col flex-wrap items-center gap-2 cursor-pointer sm:flex-row"
+      >
+        <img
+          src={"/chingu_logo.png"}
+          width={50}
+          height={50}
+          alt="Chingu Logo"
+        />
+        <h2 className="hidden text-xs font-semibold text-base-300 sm:flex sm:text-lg">
+          Chingu
+        </h2>
+      </a>
+    ),
+    children: (
+      <>
+        <ModeToggleButton theme="light" onChange={() => {}} />
+        <Button key="Button" title="Login" type="button">
+          Log In
+        </Button>
+      </>
+    ),
+  },
+};
+
+export const LoggedIn: Story = {
+  args: {
+    logo: (
+      <a
+        href={"/"}
+        className="flex flex-col flex-wrap items-center gap-2 cursor-pointer sm:flex-row"
+      >
+        <img
+          src={"/chingu_logo.png"}
+          width={50}
+          height={50}
+          alt="Chingu Logo"
+        />
+        <h2 className="hidden text-xs font-semibold text-base-300 sm:flex sm:text-lg">
+          Chingu
+        </h2>
+      </a>
+    ),
+    children: (
+      <>
+        <ModeToggleButton theme="light" onChange={() => {}} />
+        <Bell notificationCount={4} />
+        <Avatar>
+          <img width={24} height={24} alt="avatar" src={avatarUrl} />
+        </Avatar>
+        <DropDown openState={true}>
+          <div className="rounded-lg bg-secondary-content p-2 text-xs [&>*]:m-1">
+            <p className="text-[10px] font-medium text-neutral-focus">
+              My Voyage:
+            </p>
+            <p className="text-base font-medium border border-transparent text-base-300">
+              Team - Tier 1 V49
+            </p>
+          </div>
+          <Button
+            type="button"
+            variant="link"
+            size="lg"
+            className="flex justify-start w-full p-2 m-0 hover:bg-base-100 hover:text-base-300"
+          >
+            Settings
+          </Button>
+          <Button
+            type="button"
+            variant="link"
+            size="lg"
+            className="flex justify-start w-full p-2 m-0 hover:bg-base-100 hover:text-base-300"
+          >
+            Sign Out
+          </Button>
+        </DropDown>
+      </>
+    ),
+  },
+  decorators: [
+    (Story) => (
+      <div style={{ height: 300 }}>
+        <Story />
+      </div>
+    ),
+  ],
+};
