@@ -2,9 +2,9 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Navbar from "./Navbar";
 import { ModeToggleButton } from "../../mode-toggle-button";
 import { Button } from "../../button";
-import { Bell } from "../bell";
 import { Avatar } from "../../avatar";
-import { DropDown } from "../drop-down";
+import Bell from "../bell/Bell";
+import DropDown from "../drop-down/DropDown";
 
 const avatarUrl =
   "https://gravatar.com/avatar/3bfaef00e02a22f99e17c66e7a9fdd31?s=400&d=identicon&r=x";

@@ -102,6 +102,14 @@
       "import": "./dist/input/index.js",
       "types": "./dist/types/input/index.d.ts"
     },
+    "./mode-toggle-button": {
+      "import": "./dist/mode-toggle-button/index.js",
+      "types": "./dist/types/mode-toggle-button/index.d.ts"
+    },
+    "./navbar": {
+      "import": "./dist/navbar/index.js",
+      "types": "./dist/types/navbar/index.d.ts"
+    },
     "./tooltip": {
       "import": "./dist/tooltip/index.js",
       "types": "./dist/types/tooltip/index.d.ts"
