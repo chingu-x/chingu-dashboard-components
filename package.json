@@ -114,6 +114,10 @@
       "import": "./dist/input/index.js",
       "types": "./dist/types/input/index.d.ts"
     },
+    "./modal": {
+      "import": "./dist/modal/index.js",
+      "types": "./dist/types/modal/index.d.ts"
+    },
     "./stepper": {
       "import": "./dist/stepper/index.js",
       "types": "./dist/types/stepper/index.d.ts"
