@@ -1,3 +1,4 @@
 #!/bin/sh
+pnpm format:changed
 pnpm build
 node generate-exports.js
