@@ -82,7 +82,7 @@ export default function Modal({
           initial="initial"
           animate="animate"
           exit="exit"
-          className="fixed z-50 flex items-center justify-center w-full h-full overflow-x-hidden overflow-y-auto bg-overlay"
+          className="fixed z-50 flex h-full w-full items-center justify-center overflow-y-auto overflow-x-hidden bg-overlay"
           open={isOpen}
           onClick={onClose}
         >
@@ -99,7 +99,7 @@ export default function Modal({
             <div
               className={cn(
                 `flex items-center justify-between px-10 pt-10 ${headerBackground}`,
-                headerBackground && "py-6"
+                headerBackground && "py-6",
               )}
             >
               <div className="flex items-center gap-x-4">
@@ -107,7 +107,7 @@ export default function Modal({
                 <h3 className="text-xl font-semibold capitalize">{title}</h3>
               </div>
               <IconButton ariaLabel="close modal" onClick={onClose}>
-                <XMarkIcon className="w-6 h-6 fill-current" />
+                <XMarkIcon className="h-6 w-6 fill-current" />
               </IconButton>
             </div>
             {/* CONTENT */}

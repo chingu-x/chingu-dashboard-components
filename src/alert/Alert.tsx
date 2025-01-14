@@ -13,11 +13,11 @@ interface AlertProps {
 
 function Alert({ context, message }: AlertProps) {
   const icon: Record<string, JSX.Element> = {
-    success: <CheckCircleIcon className="w-6 h-6" />,
-    info: <InformationCircleIcon className="w-6 h-6" />,
-    error: <ExclamationTriangleIcon className="w-6 h-6" />,
-    warning: <InformationCircleIcon className="w-6 h-6" />,
-    neutral: <InformationCircleIcon className="w-6 h-6" />,
+    success: <CheckCircleIcon className="h-6 w-6" />,
+    info: <InformationCircleIcon className="h-6 w-6" />,
+    error: <ExclamationTriangleIcon className="h-6 w-6" />,
+    warning: <InformationCircleIcon className="h-6 w-6" />,
+    neutral: <InformationCircleIcon className="h-6 w-6" />,
   };
 
   const customStyles: Record<string, string> = {

@@ -23,7 +23,7 @@ const badge = cva(
       variant: "primary",
       size: "md",
     },
-  }
+  },
 );
 
 export type BadgeVariant = "primary" | "error" | "warning" | "success";
@@ -45,10 +45,7 @@ export default function Badge({
   ...props
 }: BadgeProps) {
   return (
-    <div
-      className={cn(badge({ variant, size, className }))}
-      {...props}
-    >
+    <div className={cn(badge({ variant, size, className }))} {...props}>
       {children}
       <span>{title}</span>
     </div>

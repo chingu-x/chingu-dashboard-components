@@ -51,7 +51,7 @@ const BaseTemplate: Story = {
     return (
       <div>
         {isOpen ? null : (
-          <div className="flex items-center justify-center w-full h-[400px]">
+          <div className="flex h-[400px] w-full items-center justify-center">
             <Button onClick={() => setIsOpen(true)}>Open modal</Button>
           </div>
         )}

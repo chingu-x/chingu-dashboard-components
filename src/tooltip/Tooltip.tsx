@@ -58,11 +58,13 @@ export default function Tooltip({
             "left-full top-1/2 translate-x-3 after:right-full after:border-l-transparent",
           position === "left" &&
             "right-full top-1/2 -translate-x-3 after:left-full after:border-r-transparent",
-          customClassName
-        )}>
+          customClassName,
+        )}
+      >
         <div
           className={`${supportText && "mb-2"}`}
-          style={{ textWrap: "nowrap" }}>
+          style={{ textWrap: "nowrap" }}
+        >
           {content}
         </div>
         {supportText && <div>{supportText}</div>}
