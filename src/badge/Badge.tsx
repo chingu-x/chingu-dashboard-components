@@ -1,4 +1,4 @@
-import { cva, type VariantProps } from "class-variance-authority";
+import { cva } from "class-variance-authority";
 import { cn } from "../tw-merge";
 import { Avatar } from "../avatar";
 import { ReactElement } from "react";
@@ -26,19 +26,22 @@ const badge = cva(
   }
 );
 
-export interface BadgeProps
-  extends React.HTMLAttributes<HTMLDivElement>,
-    VariantProps<typeof badge> {
+export type BadgeVariant = "primary" | "error" | "warning" | "success";
+export type BadgeSize = "sm" | "md" | "lg";
+
+export interface BadgeProps extends React.HTMLAttributes<HTMLDivElement> {
   title: string;
   children?: ReactElement<typeof Avatar>;
+  variant?: BadgeVariant;
+  size?: BadgeSize;
 }
 
 export default function Badge({
   className,
   title,
   children,
-  variant,
-  size,
+  variant = "primary",
+  size = "md",
   ...props
 }: BadgeProps) {
   return (
