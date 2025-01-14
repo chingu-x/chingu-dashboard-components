@@ -13,11 +13,13 @@
     "build": "vite build && tsc && node copy-types.js",
     "build:css": "tailwindcss -m -i ./src/style.css -o ./dist/styles.css",
     "preview": "vite preview",
+    "prettier": "prettier . --write",
     "storybook": "concurrently \"pnpm storybook:css\" \"storybook dev -p 6006\"",
     "storybook:css": "tailwindcss -w -i ./src/style.css -o ./src/index.css",
     "build-storybook": "concurrently \"pnpm build-storybook:css\" \"storybook build\"",
     "build-storybook:css": "tailwindcss -m -i ./src/style.css -o ./src/index.css",
     "prepublishOnly": "pnpm build",
+    "format:changed": "git diff --name-only --diff-filter=d HEAD | grep -e 'src.*\\.[jt]sx\\?$' -e 'src.*\\.json$' -e 'src.*\\.css$' -e 'src.*\\.md$' | xargs prettier -u --write",
     "prepare": "husky install"
   },
   "keywords": [],
@@ -48,6 +50,8 @@
     "concurrently": "^9.1.0",
     "husky": "^9.1.7",
     "postcss": "^8.4.49",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "semantic-release": "^24.2.0",
@@ -65,6 +69,7 @@
     "@heroicons/react": "^2.2.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "framer-motion": "^11.17.0",
     "tailwind-merge": "^2.5.5"
   },
   "exports": {
@@ -77,6 +82,10 @@
       "types": "./dist/global.d.ts"
     },
     "./tailwind-config": "./tailwind.config.js",
+    "./alert": {
+      "import": "./dist/alert/index.js",
+      "types": "./dist/types/alert/index.d.ts"
+    },
     "./avatar": {
       "import": "./dist/avatar/index.js",
       "types": "./dist/types/avatar/index.d.ts"
@@ -89,6 +98,14 @@
       "import": "./dist/badge/index.js",
       "types": "./dist/types/badge/index.d.ts"
     },
+    "./banner": {
+      "import": "./dist/banner/index.js",
+      "types": "./dist/types/banner/index.d.ts"
+    },
+    "./banner-container": {
+      "import": "./dist/banner-container/index.js",
+      "types": "./dist/types/banner-container/index.d.ts"
+    },
     "./button": {
       "import": "./dist/button/index.js",
       "types": "./dist/types/button/index.d.ts"
@@ -100,6 +117,14 @@
     "./input": {
       "import": "./dist/input/index.js",
       "types": "./dist/types/input/index.d.ts"
+    },
+    "./modal": {
+      "import": "./dist/modal/index.js",
+      "types": "./dist/types/modal/index.d.ts"
+    },
+    "./stepper": {
+      "import": "./dist/stepper/index.js",
+      "types": "./dist/types/stepper/index.d.ts"
     },
     "./tooltip": {
       "import": "./dist/tooltip/index.js",
