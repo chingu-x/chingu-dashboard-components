@@ -1,5 +1,7 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../tw-merge";
+import { Avatar } from "../avatar";
+import { ReactElement } from "react";
 
 const badge = cva(
   "flex items-center justify-center overflow-hidden rounded-[100px] font-medium text-base-300",
@@ -28,7 +30,7 @@ export interface BadgeProps
   extends React.HTMLAttributes<HTMLDivElement>,
     VariantProps<typeof badge> {
   title: string;
-  children?: React.ReactNode;
+  children?: ReactElement<typeof Avatar>;
 }
 
 export default function Badge({
@@ -40,7 +42,10 @@ export default function Badge({
   ...props
 }: BadgeProps) {
   return (
-    <div className={cn(badge({ variant, size, className }))} {...props}>
+    <div
+      className={cn(badge({ variant, size, className }))}
+      {...props}
+    >
       {children}
       <span>{title}</span>
     </div>
