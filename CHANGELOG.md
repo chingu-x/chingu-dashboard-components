@@ -1,3 +1,25 @@
+# [0.8.0](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.7.0...v0.8.0) (2025-01-14)
+
+
+### Bug Fixes
+
+* alert icon ([b640403](https://github.com/chingu-x/chingu-dashboard-components/commit/b640403c872612c0149e136a8b4d6b3308b59199))
+* exports ([cc5057a](https://github.com/chingu-x/chingu-dashboard-components/commit/cc5057aae6ae7b9fcbc9f9b1a2257090689d5b2d))
+* exports ([22a2242](https://github.com/chingu-x/chingu-dashboard-components/commit/22a2242118a1f40b664b8f3ad575abb9b07dbd95))
+* exports ([74e4b43](https://github.com/chingu-x/chingu-dashboard-components/commit/74e4b43e5d398051204d77b00a840d3f48deb903))
+* exports ([a05ab5a](https://github.com/chingu-x/chingu-dashboard-components/commit/a05ab5a8287556bada52c60f5b030ff77e0b294a))
+* intellisense for variant and size props in badge component ([20efe2d](https://github.com/chingu-x/chingu-dashboard-components/commit/20efe2d48fed4b44e4123c09d7f26405e59091b5))
+
+
+### Features
+
+* add alert ([427fdc3](https://github.com/chingu-x/chingu-dashboard-components/commit/427fdc3d80b2c9939860b5a1bce898d607944171))
+* add badge (refactored) ([3bf7c92](https://github.com/chingu-x/chingu-dashboard-components/commit/3bf7c92efa59e0d7a4a82346ed5c361b4d8e9b96))
+* add banner and banner container ([3bbc970](https://github.com/chingu-x/chingu-dashboard-components/commit/3bbc97014ce67f620c55cff5caf836b5ecb8e774))
+* add modal ([c444cd9](https://github.com/chingu-x/chingu-dashboard-components/commit/c444cd987e781828e1751c72a80c3db1cd664468))
+* add stepper ([e64e4c4](https://github.com/chingu-x/chingu-dashboard-components/commit/e64e4c48fc7f18ba66b3671e206c453146ee3f56))
+* add tooltip examples (button + avatar group ([094218c](https://github.com/chingu-x/chingu-dashboard-components/commit/094218c44b166a0b34b3a5e8833e9f4a03974d84))
+
 # [0.7.0](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.6.0...v0.7.0) (2024-12-19)
 
 ### Bug Fixes
