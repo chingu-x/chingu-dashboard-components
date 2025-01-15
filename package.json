@@ -18,7 +18,8 @@
     "build-storybook:css": "tailwindcss -m -i ./src/style.css -o ./src/index.css",
     "prepublishOnly": "pnpm build",
     "format:changed": "git diff --name-only --diff-filter=d HEAD | grep -e 'src.*\\.[jt]sx\\?$' -e 'src.*\\.json$' -e 'src.*\\.css$' -e 'src.*\\.md$' | xargs prettier -u --write",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
@@ -43,9 +44,19 @@
     "@storybook/theming": "^8.4.6",
     "@types/node": "^22.9.3",
     "@types/react": "^18.3.12",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
     "@vitejs/plugin-react": "^4.3.3",
     "autoprefixer": "^10.4.20",
     "concurrently": "^9.1.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.2",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "globals": "^15.14.0",
     "husky": "^9.1.7",
     "postcss": "^8.4.49",
     "prettier": "^3.4.2",
@@ -56,7 +67,9 @@
     "storybook": "8.4.7",
     "tailwindcss": "^3.4.15",
     "typescript": "^5.7.2",
-    "vite": "^5.4.11"
+    "typescript-eslint": "^8.20.0",
+    "vite": "^5.4.11",
+    "vite-plugin-eslint": "^1.8.1"
   },
   "peerDependencies": {
     "react": "^18.0.0",
