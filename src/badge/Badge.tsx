@@ -1,7 +1,7 @@
 import { cva } from "class-variance-authority";
+import type { ReactElement } from "react";
 import { cn } from "../tw-merge";
-import { Avatar } from "../avatar";
-import { ReactElement } from "react";
+import type { Avatar } from "../avatar";
 
 const badge = cva(
   "flex items-center justify-center overflow-hidden rounded-[100px] font-medium text-base-300",
