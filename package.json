@@ -19,7 +19,9 @@
     "prepublishOnly": "pnpm build",
     "format:changed": "git diff --name-only --diff-filter=d HEAD | grep -e 'src.*\\.[jt]sx\\?$' -e 'src.*\\.json$' -e 'src.*\\.css$' -e 'src.*\\.md$' | xargs prettier -u --write",
     "prepare": "husky install",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "vitest",
+    "test:ci": "vitest --run"
   },
   "keywords": [],
   "author": "",
@@ -42,6 +44,9 @@
     "@storybook/react-vite": "8.4.7",
     "@storybook/test": "8.4.7",
     "@storybook/theming": "^8.4.6",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@types/jest": "^29.5.14",
     "@types/node": "^22.9.3",
     "@types/react": "^18.3.12",
     "@typescript-eslint/eslint-plugin": "^8.20.0",
@@ -58,6 +63,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "globals": "^15.14.0",
     "husky": "^9.1.7",
+    "jsdom": "^26.0.0",
     "postcss": "^8.4.49",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.9",
@@ -69,7 +75,8 @@
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.20.0",
     "vite": "^5.4.11",
-    "vite-plugin-eslint": "^1.8.1"
+    "vite-plugin-eslint": "^1.8.1",
+    "vitest": "^2.1.8"
   },
   "peerDependencies": {
     "react": "^18.0.0",

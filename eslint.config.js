@@ -72,6 +72,7 @@ export default [
       "copy-types.js",
       "**/*.config.js",
       "vite.config.ts",
+      "vitest.config.ts",
       "generate-exports.js",
     ],
   },
