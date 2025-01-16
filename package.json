@@ -146,13 +146,13 @@
       "import": "./dist/inputs/index.js",
       "types": "./dist/types/inputs/index.d.ts"
     },
-    "./spinner": {
-      "import": "./dist/spinner/index.js",
-      "types": "./dist/types/spinner/index.d.ts"
-    },
     "./modal": {
       "import": "./dist/modal/index.js",
       "types": "./dist/types/modal/index.d.ts"
+    },
+    "./spinner": {
+      "import": "./dist/spinner/index.js",
+      "types": "./dist/types/spinner/index.d.ts"
     },
     "./stepper": {
       "import": "./dist/stepper/index.js",
