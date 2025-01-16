@@ -98,7 +98,7 @@ const BaseTemplate: Story = {
     rightTitle: "Right Title",
   },
   render: ({ ...args }) => (
-    <div className="flex flex-col items-center w-full p-10 gap-y-10 rounded-2xl bg-base-100">
+    <div className="flex w-full flex-col items-center gap-y-10 rounded-2xl bg-base-100 p-10">
       <Label className="font-semibold normal-case">Label</Label>
       <div className="w-full">
         <RadioGroupRating {...args} options={options} name="options" />

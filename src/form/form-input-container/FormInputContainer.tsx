@@ -21,13 +21,13 @@ export default function FormInputContainer({
         "flex w-full flex-col items-center rounded-2xl border border-base-100 bg-base-100 p-10",
         isTextField && "pb-4",
         isError && "border-error",
-        className
+        className,
       )}
     >
       <div
         className={cn(
           "flex w-full max-w-[650px] flex-col gap-y-10",
-          isScale && "max-w-none"
+          isScale && "max-w-none",
         )}
       >
         {children}

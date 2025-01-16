@@ -19,7 +19,7 @@ type Story = StoryObj<typeof meta>;
 const BaseTemplate: Story = {
   decorators: [
     (Story) => (
-      <div className="py-10 bg-base-content">
+      <div className="bg-base-content py-10">
         <Story />
       </div>
     ),

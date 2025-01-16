@@ -1,5 +1,5 @@
 import React from "react";
-import RadioInput, { RadioInputProps } from "../../radio-input/RadioInput";
+import RadioInput, { type RadioInputProps } from "../../radio-input/RadioInput";
 
 interface RadioGroupProps extends React.InputHTMLAttributes<HTMLInputElement> {
   options: RadioInputProps[];
@@ -12,7 +12,7 @@ const RadioGroup = React.forwardRef<HTMLInputElement, RadioGroupProps>(
     <div className="flex flex-col gap-y-5">
       <div className="grid h-[80px] w-full grid-cols-[min-content_1fr_min-content] items-center justify-between gap-x-4">
         {/* LEFT TITLE */}
-        <span className="text-base font-medium text-right whitespace-nowrap text-base-300">
+        <span className="whitespace-nowrap text-right text-base font-medium text-base-300">
           {leftTitle}
         </span>
         {/* RADIO GROUP */}
@@ -30,12 +30,12 @@ const RadioGroup = React.forwardRef<HTMLInputElement, RadioGroupProps>(
           ))}
         </div>
         {/* RIGHT TITLE */}
-        <span className="text-base font-medium whitespace-nowrap text-base-300">
+        <span className="whitespace-nowrap text-base font-medium text-base-300">
           {rightTitle}
         </span>
       </div>
     </div>
-  )
+  ),
 );
 
 RadioGroup.displayName = "RadioGroup";

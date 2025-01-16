@@ -1,5 +1,5 @@
 import React from "react";
-import RadioInput, { RadioInputProps } from "../../radio-input/RadioInput";
+import RadioInput, { type RadioInputProps } from "../../radio-input/RadioInput";
 
 interface RadioGroupProps extends React.InputHTMLAttributes<HTMLInputElement> {
   options: RadioInputProps[];
@@ -19,7 +19,7 @@ const RadioGroupVertical = React.forwardRef<HTMLInputElement, RadioGroupProps>(
         />
       ))}
     </div>
-  )
+  ),
 );
 
 RadioGroupVertical.displayName = "RadioGroupVertical";

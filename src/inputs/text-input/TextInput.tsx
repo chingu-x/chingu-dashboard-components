@@ -42,7 +42,7 @@ const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
       ariaLabel,
       ...props
     },
-    ref
+    ref,
   ) => {
     const [isClearButtonVisible, setIsClearButtonVisible] = useState(false);
     const [currentSuggestion, setCurrentSuggestion] = useState(suggestion);
@@ -58,7 +58,7 @@ const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
         const currentLength = e.target.value.length;
         if (currentLength > 0) {
           setCurrentSuggestion(
-            `Character length ${currentLength}/${maxLength}`
+            `Character length ${currentLength}/${maxLength}`,
           );
         } else {
           setCurrentSuggestion(suggestion);
@@ -88,7 +88,7 @@ const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
         <div
           className={cn(
             "group relative my-2",
-            isClearButtonVisible && "pr-[48px]"
+            isClearButtonVisible && "pr-[48px]",
           )}
         >
           <input
@@ -104,7 +104,7 @@ const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
                 "border-error/40 hover:border-error focus-visible:border-error/40 focus-visible:shadow-error/20",
               inputGroupContent && "pl-[56px]",
               submitButtonText && "pr-[72px]",
-              className
+              className,
             )}
             ref={ref}
             {...props}
@@ -130,7 +130,7 @@ const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
               disabled={buttonDisabled}
               className={cn(
                 "absolute right-[2px] top-1/2 h-[calc(100%-4px)] -translate-y-1/2 rounded-[6.2px]",
-                isClearButtonVisible && "right-[50px]"
+                isClearButtonVisible && "right-[50px]",
               )}
             >
               {submitButtonText}
@@ -143,14 +143,14 @@ const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
               onClick={clearInput}
               ariaLabel="delete input"
             >
-              <XMarkIcon className="w-5 h-5 text-base-300" />
+              <XMarkIcon className="h-5 w-5 text-base-300" />
             </IconButton>
           )}
           {/* SHOW/HIDE PASSWORD TOGGLE */}
           {type === "password" && (
             <div
               onClick={toggleShowPassword}
-              className="absolute inset-y-0 right-0 flex items-center px-5 cursor-pointer"
+              className="absolute inset-y-0 right-0 flex cursor-pointer items-center px-5"
             >
               {showPassword ? (
                 <EyeIcon className="h-5" />
@@ -167,7 +167,7 @@ const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
         />
       </div>
     );
-  }
+  },
 );
 
 TextInput.displayName = "TextInput";

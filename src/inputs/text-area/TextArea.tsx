@@ -35,7 +35,7 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
       className,
       ...props
     },
-    ref
+    ref,
   ) => {
     const [currentSuggestion, setCurrentSuggestion] = useState(suggestion);
     const textAreaRef = useRef<ElementRef<"textarea"> | null>(null);
@@ -46,7 +46,7 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
       if (textAreaRef !== null && textAreaRef.current !== null) {
         textAreaRef.current.style.height = `${Math.max(
           textAreaRef.current.scrollHeight + 4,
-          0
+          0,
         )}px`;
       }
     }, [textAreaRef?.current?.innerHTML]);
@@ -57,7 +57,7 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
       e.target.style.height = e.target.style.minHeight = "auto";
       e.target.style.minHeight = `${Math.min(
         e.target.scrollHeight + 4,
-        parseInt(e.target.style.maxHeight)
+        parseInt(e.target.style.maxHeight),
       )}px`;
       e.target.style.height = `${Math.max(e.target.scrollHeight + 4, 0)}px`;
 
@@ -93,7 +93,7 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
             "placeholder-base my-2 w-full resize-none rounded-lg border-2 border-neutral/40 bg-base-200 px-3.5 py-2.5 text-base text-base-300 shadow-[0px_0px_0px_3px] shadow-transparent outline-none transition hover:border-neutral-focus focus-visible:border-neutral/40 focus-visible:bg-base-200 focus-visible:shadow-neutral/30 focus-visible:ring-0 hover:focus-visible:border-neutral/40 disabled:cursor-not-allowed disabled:bg-base-100 disabled:hover:border-neutral/40",
             errorMessage &&
               "border-error/40 focus-visible:border-error/40 focus-visible:shadow-error/20",
-            className
+            className,
           )}
           {...props}
           onChange={(e) => {
@@ -110,7 +110,7 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
         />
       </div>
     );
-  }
+  },
 );
 
 Textarea.displayName = "Textarea";

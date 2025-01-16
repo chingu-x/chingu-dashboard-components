@@ -12,12 +12,12 @@ export interface CheckboxInputProps
 
 const CheckboxInput = React.forwardRef<HTMLInputElement, CheckboxInputProps>(
   ({ id, label, className, ...props }, ref) => (
-    <div className="relative flex items-center w-full gap-x-4">
+    <div className="relative flex w-full items-center gap-x-4">
       <Label
         htmlFor={id}
         className={cn(
           "group flex cursor-pointer items-center gap-x-4 normal-case text-neutral-focus",
-          className
+          className,
         )}
       >
         <input
@@ -25,17 +25,17 @@ const CheckboxInput = React.forwardRef<HTMLInputElement, CheckboxInputProps>(
           type="checkbox"
           ref={ref}
           {...props}
-          className="hidden peer"
+          className="peer hidden"
         />
         <span className="flex h-6 w-6 items-center justify-center rounded border border-neutral/40 bg-base-200 transition-all group-hover:bg-base-100 peer-checked:border-base-300 group-hover:peer-checked:border-neutral-content [&>*]:hidden [&>*]:text-base-300 peer-checked:[&>*]:block group-hover:peer-checked:[&>*]:text-neutral-content">
-          <CheckIcon className="hidden w-full h-full transition-all" />
+          <CheckIcon className="hidden h-full w-full transition-all" />
         </span>
         <span className="transition-all peer-checked:text-base-300">
           {label}
         </span>
       </Label>
     </div>
-  )
+  ),
 );
 
 CheckboxInput.displayName = "CheckboxInput";

@@ -1,5 +1,5 @@
 import React from "react";
-import RadioInput, { RadioInputProps } from "../../radio-input/RadioInput";
+import RadioInput, { type RadioInputProps } from "../../radio-input/RadioInput";
 
 interface RadioGroupProps extends React.InputHTMLAttributes<HTMLInputElement> {
   options: RadioInputProps[];

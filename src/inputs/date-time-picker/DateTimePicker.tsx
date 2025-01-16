@@ -24,7 +24,7 @@ const DateTimePicker = React.forwardRef<DatePicker, DatePickerInputProps>(
       className,
       ...props
     },
-    ref
+    ref,
   ) => {
     const filterPassedTime = (time: Date) => {
       const currentDate = new Date();
@@ -32,7 +32,7 @@ const DateTimePicker = React.forwardRef<DatePicker, DatePickerInputProps>(
       return currentDate.getTime() < selectedDate.getTime();
     };
     return (
-      <div className="flex flex-col w-full">
+      <div className="flex w-full flex-col">
         <DatePicker
           id={id}
           selected={selectedValue}
@@ -58,7 +58,7 @@ const DateTimePicker = React.forwardRef<DatePicker, DatePickerInputProps>(
         />
       </div>
     );
-  }
+  },
 );
 
 DateTimePicker.displayName = "DateTimePicker";

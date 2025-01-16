@@ -1,5 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Tooltip from "./Tooltip";
+import { Button } from "../button";
+import { AvatarGroup } from "../avatar-group";
+import { Avatar } from "../avatar";
+
+const avatarUrl =
+  "https://gravatar.com/avatar/3bfaef00e02a22f99e17c66e7a9fdd31?s=400&d=identicon&r=x";
 
 const meta = {
   title: "Components/Overlays/Tooltip",
@@ -47,10 +53,59 @@ const BaseTemplate: Story = {
     tooltipWidth: "small",
     children: "Hover here",
     isDisplay: true,
-    hovered: false,
+    hovered: true,
   },
 };
 
 export const Default: Story = {
   ...BaseTemplate,
+};
+
+export const ButtonTooltip: Story = {
+  args: {
+    content: "This is a tooltip",
+    position: "right",
+    tooltipWidth: "small",
+    children: "Hover here",
+    isDisplay: true,
+    hovered: true,
+  },
+  render: ({ ...args }) => (
+    <Tooltip {...args}>
+      <Button type="button" size="lg" variant="neutral">
+        Button
+      </Button>
+    </Tooltip>
+  ),
+};
+
+export const AvatarGroupTooltip: Story = {
+  args: {
+    content: "This is a tooltip",
+    customClassName: "text-xs font-medium w-fit",
+    position: "bottom",
+    tooltipWidth: "small",
+    children: "Hover here",
+    isDisplay: true,
+    hovered: false,
+  },
+  render: ({ ...args }) => (
+    <AvatarGroup>
+      <Tooltip {...args} content="tooltip 1" hovered={true}>
+        <Avatar>
+          <img width={24} height={24} alt="avatar" src={avatarUrl} />
+        </Avatar>
+      </Tooltip>
+      <Tooltip {...args} content="tooltip 2">
+        <Avatar>
+          <img width={24} height={24} alt="avatar" src={avatarUrl} />
+        </Avatar>
+      </Tooltip>
+      <Tooltip {...args} content="tooltip 3">
+        <Avatar>
+          <img width={24} height={24} alt="avatar" src={avatarUrl} />
+        </Avatar>
+      </Tooltip>
+    </AvatarGroup>
+  ),
 };

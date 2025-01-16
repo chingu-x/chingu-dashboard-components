@@ -1,6 +1,6 @@
 {
   "name": "@chingu-x/components",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Component library for Chingu dashboard projects",
   "module": "dist/index.js",
   "type": "module",
@@ -9,16 +9,19 @@
     "dist"
   ],
   "scripts": {
-    "dev": "vite",
     "build": "vite build && tsc && node copy-types.js",
     "build:css": "tailwindcss -m -i ./src/style.css -o ./dist/styles.css",
-    "preview": "vite preview",
+    "prettier": "prettier . --write",
     "storybook": "concurrently \"pnpm storybook:css\" \"storybook dev -p 6006\"",
     "storybook:css": "tailwindcss -w -i ./src/style.css -o ./src/index.css",
     "build-storybook": "concurrently \"pnpm build-storybook:css\" \"storybook build\"",
     "build-storybook:css": "tailwindcss -m -i ./src/style.css -o ./src/index.css",
     "prepublishOnly": "pnpm build",
-    "prepare": "husky install"
+    "format:changed": "git diff --name-only --diff-filter=d HEAD | grep -e 'src.*\\.[jt]sx\\?$' -e 'src.*\\.json$' -e 'src.*\\.css$' -e 'src.*\\.md$' | xargs prettier -u --write",
+    "prepare": "husky install",
+    "lint": "eslint .",
+    "test": "vitest",
+    "test:ci": "vitest --run"
   },
   "keywords": [],
   "author": "",
@@ -41,21 +44,40 @@
     "@storybook/react-vite": "8.4.7",
     "@storybook/test": "8.4.7",
     "@storybook/theming": "^8.4.6",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@types/jest": "^29.5.14",
     "@types/node": "^22.9.3",
     "@types/react": "^18.3.12",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
     "@types/react-datepicker": "^6.0.0",
     "@vitejs/plugin-react": "^4.3.3",
     "autoprefixer": "^10.4.20",
     "concurrently": "^9.1.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.2",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "globals": "^15.14.0",
     "husky": "^9.1.7",
+    "jsdom": "^26.0.0",
     "postcss": "^8.4.49",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "semantic-release": "^24.2.0",
     "storybook": "8.4.7",
     "tailwindcss": "^3.4.15",
     "typescript": "^5.7.2",
-    "vite": "^5.4.11"
+    "typescript-eslint": "^8.20.0",
+    "vite": "^5.4.11",
+    "vite-plugin-eslint": "^1.8.1",
+    "vitest": "^2.1.8"
   },
   "peerDependencies": {
     "react": "^18.0.0",
@@ -66,6 +88,7 @@
     "@heroicons/react": "^2.2.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "framer-motion": "^11.17.0",
     "react-datepicker": "^6.1.0",
     "tailwind-merge": "^2.5.5"
   },
@@ -79,6 +102,10 @@
       "types": "./dist/global.d.ts"
     },
     "./tailwind-config": "./tailwind.config.js",
+    "./alert": {
+      "import": "./dist/alert/index.js",
+      "types": "./dist/types/alert/index.d.ts"
+    },
     "./avatar": {
       "import": "./dist/avatar/index.js",
       "types": "./dist/types/avatar/index.d.ts"
@@ -90,6 +117,14 @@
     "./badge": {
       "import": "./dist/badge/index.js",
       "types": "./dist/types/badge/index.d.ts"
+    },
+    "./banner": {
+      "import": "./dist/banner/index.js",
+      "types": "./dist/types/banner/index.d.ts"
+    },
+    "./banner-container": {
+      "import": "./dist/banner-container/index.js",
+      "types": "./dist/types/banner-container/index.d.ts"
     },
     "./button": {
       "import": "./dist/button/index.js",
@@ -114,6 +149,14 @@
     "./spinner": {
       "import": "./dist/spinner/index.js",
       "types": "./dist/types/spinner/index.d.ts"
+    },
+    "./modal": {
+      "import": "./dist/modal/index.js",
+      "types": "./dist/types/modal/index.d.ts"
+    },
+    "./stepper": {
+      "import": "./dist/stepper/index.js",
+      "types": "./dist/types/stepper/index.d.ts"
     },
     "./tooltip": {
       "import": "./dist/tooltip/index.js",
