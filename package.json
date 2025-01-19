@@ -136,6 +136,10 @@
       "import": "./dist/input/index.js",
       "types": "./dist/types/input/index.d.ts"
     },
+    "./modal": {
+      "import": "./dist/modal/index.js",
+      "types": "./dist/types/modal/index.d.ts"
+    },
     "./mode-toggle-button": {
       "import": "./dist/mode-toggle-button/index.js",
       "types": "./dist/types/mode-toggle-button/index.d.ts"
@@ -147,10 +151,6 @@
     "./social-button": {
       "import": "./dist/social-button/index.js",
       "types": "./dist/types/social-button/index.d.ts"
-    },
-    "./modal": {
-      "import": "./dist/modal/index.js",
-      "types": "./dist/types/modal/index.d.ts"
     },
     "./stepper": {
       "import": "./dist/stepper/index.js",
