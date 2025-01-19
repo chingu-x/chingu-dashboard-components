@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -761,6 +761,10 @@ video {
   height: 1.5rem;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
 .h-\[18px\] {
   height: 18px;
 }
@@ -792,6 +796,10 @@ video {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .w-\[138px\] {
@@ -894,12 +902,12 @@ video {
   justify-content: space-between;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-x-2 {
@@ -910,6 +918,10 @@ video {
 .gap-x-8 {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
+}
+
+.gap-y-\[5px\] {
+  row-gap: 5px;
 }
 
 .-space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -944,6 +956,10 @@ video {
 
 .border {
   border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-b {
@@ -1135,6 +1151,11 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -1331,6 +1352,11 @@ video {
   border-style: none;
 }
 
+.hover\:border-base-100:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(var(--base-100) / var(--tw-border-opacity, 1));
+}
+
 .hover\:bg-accent-focus:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(var(--accent-focus) / var(--tw-bg-opacity, 1));
@@ -1343,6 +1369,11 @@ video {
 
 .hover\:bg-base-300\/25:hover {
   background-color: rgb(var(--base-300) / 0.25);
+}
+
+.hover\:bg-base-content:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--base-content) / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-error:hover {
@@ -1374,9 +1405,24 @@ video {
   color: rgb(var(--base-300) / var(--tw-text-opacity, 1));
 }
 
+.focus\:bg-base-content:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--base-content) / var(--tw-bg-opacity, 1));
+}
+
+.focus\:text-black:focus {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
 .active\:bg-accent-content:active {
   --tw-bg-opacity: 1;
   background-color: rgb(var(--accent-content) / var(--tw-bg-opacity, 1));
+}
+
+.active\:bg-base-content:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--base-content) / var(--tw-bg-opacity, 1));
 }
 
 .active\:bg-error:active {
