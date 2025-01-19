@@ -110,6 +110,10 @@
       "import": "./dist/navbar/index.js",
       "types": "./dist/types/navbar/index.d.ts"
     },
+    "./social-button": {
+      "import": "./dist/social-button/index.js",
+      "types": "./dist/types/social-button/index.d.ts"
+    },
     "./tooltip": {
       "import": "./dist/tooltip/index.js",
       "types": "./dist/types/tooltip/index.d.ts"
