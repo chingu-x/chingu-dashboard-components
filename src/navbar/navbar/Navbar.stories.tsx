@@ -23,7 +23,7 @@ export const LoggedOut: Story = {
     logo: (
       <a
         href={"/"}
-        className="flex flex-col flex-wrap items-center gap-2 cursor-pointer sm:flex-row"
+        className="flex cursor-pointer flex-col flex-wrap items-center gap-2 sm:flex-row"
       >
         <img
           src={"/chingu_logo.png"}
@@ -52,7 +52,7 @@ export const LoggedIn: Story = {
     logo: (
       <a
         href={"/"}
-        className="flex flex-col flex-wrap items-center gap-2 cursor-pointer sm:flex-row"
+        className="flex cursor-pointer flex-col flex-wrap items-center gap-2 sm:flex-row"
       >
         <img
           src={"/chingu_logo.png"}
@@ -77,7 +77,7 @@ export const LoggedIn: Story = {
             <p className="text-[10px] font-medium text-neutral-focus">
               My Voyage:
             </p>
-            <p className="text-base font-medium border border-transparent text-base-300">
+            <p className="border border-transparent text-base font-medium text-base-300">
               Team - Tier 1 V49
             </p>
           </div>
@@ -85,7 +85,7 @@ export const LoggedIn: Story = {
             type="button"
             variant="link"
             size="lg"
-            className="flex justify-start w-full p-2 m-0 hover:bg-base-100 hover:text-base-300"
+            className="m-0 flex w-full justify-start p-2 hover:bg-base-100 hover:text-base-300"
           >
             Settings
           </Button>
@@ -93,7 +93,7 @@ export const LoggedIn: Story = {
             type="button"
             variant="link"
             size="lg"
-            className="flex justify-start w-full p-2 m-0 hover:bg-base-100 hover:text-base-300"
+            className="m-0 flex w-full justify-start p-2 hover:bg-base-100 hover:text-base-300"
           >
             Sign Out
           </Button>

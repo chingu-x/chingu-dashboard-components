@@ -15,10 +15,10 @@ export default function DropDown({ children, openState }: DropDownProps) {
   };
 
   return (
-    <div className="relative py-0 mx-2">
+    <div className="relative mx-2 py-0">
       <label
         tabIndex={0}
-        className="flex p-0 m-0 bg-transparent border-none text-base-300 hover:border-none hover:bg-transparent"
+        className="m-0 flex border-none bg-transparent p-0 text-base-300 hover:border-none hover:bg-transparent"
       >
         <ChevronDownIcon className="w-4 cursor-pointer text-base-300" />
       </label>

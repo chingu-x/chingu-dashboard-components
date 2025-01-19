@@ -9,7 +9,7 @@ const avatarUrl =
   "https://gravatar.com/avatar/3bfaef00e02a22f99e17c66e7a9fdd31?s=400&d=identicon&r=x";
 
 const meta: Meta<typeof AvatarGroup> = {
-  title: "Components/Avatar/Avatar Group",
+  title: "Components/Data display/Avatar Group",
   component: AvatarGroup,
   parameters: {
     layout: "centered",
@@ -30,38 +30,14 @@ type Story = StoryObj<typeof AvatarGroup>;
 export const AFewMembers: Story = {
   args: {
     children: [
-      <Avatar
-        key={1}
-        withBorder
-      >
-        <img
-          width={24}
-          height={24}
-          alt="avatar"
-          src={avatarUrl}
-        />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
-      <Avatar
-        key={2}
-        withBorder
-      >
-        <img
-          width={24}
-          height={24}
-          alt="avatar"
-          src={avatarUrl}
-        />
+      <Avatar key={2} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
-      <Avatar
-        key={3}
-        withBorder
-      >
-        <img
-          width={24}
-          height={24}
-          alt="avatar"
-          src={avatarUrl}
-        />
+      <Avatar key={3} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
     ],
   },
@@ -70,16 +46,8 @@ export const AFewMembers: Story = {
 export const SingleMember: Story = {
   args: {
     children: [
-      <Avatar
-        key={1}
-        withBorder
-      >
-        <img
-          width={24}
-          height={24}
-          alt="avatar"
-          src={avatarUrl}
-        />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
     ],
   },
@@ -88,82 +56,26 @@ export const SingleMember: Story = {
 export const ManyMembers: Story = {
   args: {
     children: [
-      <Avatar
-        key={1}
-        withBorder
-      >
-        <img
-          width={24}
-          height={24}
-          alt="avatar"
-          src={avatarUrl}
-        />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
-      <Avatar
-        key={1}
-        withBorder
-      >
-        <img
-          width={24}
-          height={24}
-          alt="avatar"
-          src={avatarUrl}
-        />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
-      <Avatar
-        key={1}
-        withBorder
-      >
-        <img
-          width={24}
-          height={24}
-          alt="avatar"
-          src={avatarUrl}
-        />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
-      <Avatar
-        key={1}
-        withBorder
-      >
-        <img
-          width={24}
-          height={24}
-          alt="avatar"
-          src={avatarUrl}
-        />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
-      <Avatar
-        key={1}
-        withBorder
-      >
-        <img
-          width={24}
-          height={24}
-          alt="avatar"
-          src={avatarUrl}
-        />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
-      <Avatar
-        key={1}
-        withBorder
-      >
-        <img
-          width={24}
-          height={24}
-          alt="avatar"
-          src={avatarUrl}
-        />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
-      <Avatar
-        key={1}
-        withBorder
-      >
-        <img
-          width={24}
-          height={24}
-          alt="avatar"
-          src={avatarUrl}
-        />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
     ],
   },
@@ -172,16 +84,8 @@ export const ManyMembers: Story = {
 export const Placeholder: Story = {
   args: {
     children: [
-      <Avatar
-        key={1}
-        withBorder
-      >
-        <img
-          width={24}
-          height={24}
-          alt="avatar"
-          src={placeholder}
-        />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={placeholder} />
       </Avatar>,
     ],
   },
@@ -190,38 +94,14 @@ export const Placeholder: Story = {
 export const MixedImages: Story = {
   args: {
     children: [
-      <Avatar
-        key={1}
-        withBorder
-      >
-        <img
-          width={24}
-          height={24}
-          alt="avatar"
-          src={avatarUrl}
-        />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
-      <Avatar
-        key={1}
-        withBorder
-      >
-        <img
-          width={24}
-          height={24}
-          alt="avatar"
-          src={placeholder}
-        />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={placeholder} />
       </Avatar>,
-      <Avatar
-        key={1}
-        withBorder
-      >
-        <img
-          width={24}
-          height={24}
-          alt="avatar"
-          src={avatarUrl}
-        />
+      <Avatar key={1} withBorder>
+        <img width={24} height={24} alt="avatar" src={avatarUrl} />
       </Avatar>,
     ],
   },

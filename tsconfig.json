@@ -10,10 +10,8 @@
     "moduleResolution": "node",
     "skipLibCheck": true,
     "strict": true,
+    "types": ["vite/client", "vitest"]
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-  ],
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules", "dist"]
 }

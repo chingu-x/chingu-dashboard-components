@@ -7,10 +7,10 @@ export default function Bell({
 }) {
   return (
     <div className="relative">
-      <span className="absolute px-1 text-white bg-red-500 rounded-full -end-3 -top-3">
+      <span className="absolute -end-3 -top-3 rounded-full bg-red-500 px-1 text-white">
         {notificationCount}
       </span>
-      <BellIcon className="self-center w-6 h-6 duration-200 cursor-pointer text-base-300" />
+      <BellIcon className="h-6 w-6 cursor-pointer self-center text-base-300 duration-200" />
     </div>
   );
 }

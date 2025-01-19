@@ -20,9 +20,9 @@ export default function Avatar({
   return (
     <div
       className={cn(
-        "shrink-1 cursor-pointer overflow-hidden rounded-full px-0 bg-base-200 h-fit w-fit",
+        "shrink-1 h-fit w-fit cursor-pointer overflow-hidden rounded-full bg-base-200 px-0",
         withBorder ? "border border-base-content" : "",
-        customClassName
+        customClassName,
       )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}

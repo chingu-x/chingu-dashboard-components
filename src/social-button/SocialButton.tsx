@@ -15,7 +15,7 @@ export default function SocialButton({
   ...props
 }: SocialButtonProps) {
   const getContent = (
-    variant: SocialButtonVariant
+    variant: SocialButtonVariant,
   ): { icon: string; alt: string } => {
     if (variant === "github")
       return {
@@ -41,8 +41,8 @@ export default function SocialButton({
     <button
       type="button"
       className={cn(
-        "flex justify-center items-center h-[100px] w-[100px] flex-col gap-x-2 gap-y-[5px] border-2 border-base-100 bg-base-200 rounded-lg text-sm font-medium capitalize text-base-300 hover:border-base-100 hover:bg-base-content focus:bg-base-content focus:text-black active:bg-base-content",
-        className
+        "flex h-[100px] w-[100px] flex-col items-center justify-center gap-x-2 gap-y-[5px] rounded-lg border-2 border-base-100 bg-base-200 text-sm font-medium capitalize text-base-300 hover:border-base-100 hover:bg-base-content focus:bg-base-content focus:text-black active:bg-base-content",
+        className,
       )}
       aria-label={`sign in or sign up with ${content.alt}`}
       {...props}
