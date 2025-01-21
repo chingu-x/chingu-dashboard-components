@@ -51,6 +51,7 @@
     "@types/react": "^18.3.12",
     "@typescript-eslint/eslint-plugin": "^8.20.0",
     "@typescript-eslint/parser": "^8.20.0",
+    "@types/react-datepicker": "^6.0.0",
     "@vitejs/plugin-react": "^4.3.3",
     "autoprefixer": "^10.4.20",
     "concurrently": "^9.1.0",
@@ -88,6 +89,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.17.0",
+    "react-datepicker": "^6.1.0",
     "tailwind-merge": "^2.5.5"
   },
   "exports": {
@@ -128,17 +130,29 @@
       "import": "./dist/button/index.js",
       "types": "./dist/types/button/index.d.ts"
     },
+    "./form": {
+      "import": "./dist/form/index.js",
+      "types": "./dist/types/form/index.d.ts"
+    },
+    "./helpers": {
+      "import": "./dist/helpers/index.js",
+      "types": "./dist/types/helpers/index.d.ts"
+    },
     "./icon-button": {
       "import": "./dist/icon-button/index.js",
       "types": "./dist/types/icon-button/index.d.ts"
     },
-    "./input": {
-      "import": "./dist/input/index.js",
-      "types": "./dist/types/input/index.d.ts"
+    "./inputs": {
+      "import": "./dist/inputs/index.js",
+      "types": "./dist/types/inputs/index.d.ts"
     },
     "./modal": {
       "import": "./dist/modal/index.js",
       "types": "./dist/types/modal/index.d.ts"
+    },
+    "./spinner": {
+      "import": "./dist/spinner/index.js",
+      "types": "./dist/types/spinner/index.d.ts"
     },
     "./stepper": {
       "import": "./dist/stepper/index.js",
