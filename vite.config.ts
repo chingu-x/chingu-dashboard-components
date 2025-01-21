@@ -23,6 +23,6 @@ export default defineConfig({
     },
   },
   resolve: {
-    extensions: [".mjs"],
+    extensions: [".mjs", ".js", ".ts", ".jsx", ".tsx", ".json"],
   },
 });
