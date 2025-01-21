@@ -22,4 +22,7 @@ export default defineConfig({
       plugins: [tailwindcss(), autoprefixer()],
     },
   },
+  resolve: {
+    extensions: [".mjs"],
+  },
 });
