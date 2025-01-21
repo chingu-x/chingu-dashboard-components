@@ -9,5 +9,8 @@ export default mergeConfig(
       environment: "jsdom",
       setupFiles: "./src/setupTest.ts",
     },
+    resolve: {
+      extensions: [".mjs"],
+    },
   }),
 );
