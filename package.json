@@ -150,10 +150,6 @@
       "import": "./dist/modal/index.js",
       "types": "./dist/types/modal/index.d.ts"
     },
-    "./spinner": {
-      "import": "./dist/spinner/index.js",
-      "types": "./dist/types/spinner/index.d.ts"
-    },
     "./mode-toggle-button": {
       "import": "./dist/mode-toggle-button/index.js",
       "types": "./dist/types/mode-toggle-button/index.d.ts"
@@ -165,6 +161,10 @@
     "./social-button": {
       "import": "./dist/social-button/index.js",
       "types": "./dist/types/social-button/index.d.ts"
+    },
+    "./spinner": {
+      "import": "./dist/spinner/index.js",
+      "types": "./dist/types/spinner/index.d.ts"
     },
     "./stepper": {
       "import": "./dist/stepper/index.js",
