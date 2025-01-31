@@ -7,32 +7,30 @@
 
 # [0.9.0](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.8.0...v0.9.0) (2025-01-21)
 
-
 ### Bug Fixes
 
-* add export ([fb8ef8b](https://github.com/chingu-x/chingu-dashboard-components/commit/fb8ef8be2f2caf6768a2d3213f2ba7d630cb6263))
-* add more exports ([1b51904](https://github.com/chingu-x/chingu-dashboard-components/commit/1b51904f8a1b1f73775d222d13c66f4c917c452d))
-* checkbox group vertical export ([5b481f2](https://github.com/chingu-x/chingu-dashboard-components/commit/5b481f211a819df69fde80d3ef9e3cc7c04de445))
-* export ([c7ac828](https://github.com/chingu-x/chingu-dashboard-components/commit/c7ac8283721c8627ae3b8833227acc0e87be5668))
-* fix input and from exports ([348e25a](https://github.com/chingu-x/chingu-dashboard-components/commit/348e25af6cda1420405348a840582da0a06d0010))
-* fix issue with import in test not resolving properly ([c1e50dd](https://github.com/chingu-x/chingu-dashboard-components/commit/c1e50dd71a6cae678e608150667b24832cd6b3ae))
-* fix issue with unable to resolve mjs files ([3a2dab2](https://github.com/chingu-x/chingu-dashboard-components/commit/3a2dab21f96a263093388fb96819c991ea3c8f9a))
-* imports (probably needs fixing) ([e2dac9f](https://github.com/chingu-x/chingu-dashboard-components/commit/e2dac9fe1c91275453fdea76c9b1961701a2d3f5))
-* other stuff ([6d5c913](https://github.com/chingu-x/chingu-dashboard-components/commit/6d5c913978ae18cd90e4453eaeb1d6d2320cd3fa))
-* radio group rating export ([e6f7b52](https://github.com/chingu-x/chingu-dashboard-components/commit/e6f7b5253489da198529ac948a7ae892079235c4))
-
+- add export ([fb8ef8b](https://github.com/chingu-x/chingu-dashboard-components/commit/fb8ef8be2f2caf6768a2d3213f2ba7d630cb6263))
+- add more exports ([1b51904](https://github.com/chingu-x/chingu-dashboard-components/commit/1b51904f8a1b1f73775d222d13c66f4c917c452d))
+- checkbox group vertical export ([5b481f2](https://github.com/chingu-x/chingu-dashboard-components/commit/5b481f211a819df69fde80d3ef9e3cc7c04de445))
+- export ([c7ac828](https://github.com/chingu-x/chingu-dashboard-components/commit/c7ac8283721c8627ae3b8833227acc0e87be5668))
+- fix input and from exports ([348e25a](https://github.com/chingu-x/chingu-dashboard-components/commit/348e25af6cda1420405348a840582da0a06d0010))
+- fix issue with import in test not resolving properly ([c1e50dd](https://github.com/chingu-x/chingu-dashboard-components/commit/c1e50dd71a6cae678e608150667b24832cd6b3ae))
+- fix issue with unable to resolve mjs files ([3a2dab2](https://github.com/chingu-x/chingu-dashboard-components/commit/3a2dab21f96a263093388fb96819c991ea3c8f9a))
+- imports (probably needs fixing) ([e2dac9f](https://github.com/chingu-x/chingu-dashboard-components/commit/e2dac9fe1c91275453fdea76c9b1961701a2d3f5))
+- other stuff ([6d5c913](https://github.com/chingu-x/chingu-dashboard-components/commit/6d5c913978ae18cd90e4453eaeb1d6d2320cd3fa))
+- radio group rating export ([e6f7b52](https://github.com/chingu-x/chingu-dashboard-components/commit/e6f7b5253489da198529ac948a7ae892079235c4))
 
 ### Features
 
-* add checkbox components ([fa2eb40](https://github.com/chingu-x/chingu-dashboard-components/commit/fa2eb409d5bdb3d704afee0e695a256d348c3b23))
-* add dateTimePicker (need to be updated to v.7 in future) ([a6f8a7e](https://github.com/chingu-x/chingu-dashboard-components/commit/a6f8a7ebb8814f4c66bb1632c386ba88e064d681))
-* add form components (voyage submission/weekly checkin forms) ([b2bb5b1](https://github.com/chingu-x/chingu-dashboard-components/commit/b2bb5b13b4f4148a7786e80e2126cd5820d06dea))
-* add radio inputs ([70e6f6c](https://github.com/chingu-x/chingu-dashboard-components/commit/70e6f6c1e9fc15a67003c0d277562f3d3de05347))
-* add spinner ([a4100f7](https://github.com/chingu-x/chingu-dashboard-components/commit/a4100f7fb5fc3cb63eeb6514fcf612ce7ef9a326))
-* add text input button ([024c042](https://github.com/chingu-x/chingu-dashboard-components/commit/024c042154f25a87900ac9a1c918d4bf46fbe7dd))
-* add textInput, textArea, label ([fc0c4cf](https://github.com/chingu-x/chingu-dashboard-components/commit/fc0c4cf7281e62364bf7596e3a8f7dabd490c4d1))
-* refactor radio input ([c74d19b](https://github.com/chingu-x/chingu-dashboard-components/commit/c74d19b08da0c39eaf29060e15af5e7264b1cb4e))
-* remove text input button ([bad36ab](https://github.com/chingu-x/chingu-dashboard-components/commit/bad36abe613dab4b6ee60583cbce17bbf55b2602))
+- add checkbox components ([fa2eb40](https://github.com/chingu-x/chingu-dashboard-components/commit/fa2eb409d5bdb3d704afee0e695a256d348c3b23))
+- add dateTimePicker (need to be updated to v.7 in future) ([a6f8a7e](https://github.com/chingu-x/chingu-dashboard-components/commit/a6f8a7ebb8814f4c66bb1632c386ba88e064d681))
+- add form components (voyage submission/weekly checkin forms) ([b2bb5b1](https://github.com/chingu-x/chingu-dashboard-components/commit/b2bb5b13b4f4148a7786e80e2126cd5820d06dea))
+- add radio inputs ([70e6f6c](https://github.com/chingu-x/chingu-dashboard-components/commit/70e6f6c1e9fc15a67003c0d277562f3d3de05347))
+- add spinner ([a4100f7](https://github.com/chingu-x/chingu-dashboard-components/commit/a4100f7fb5fc3cb63eeb6514fcf612ce7ef9a326))
+- add text input button ([024c042](https://github.com/chingu-x/chingu-dashboard-components/commit/024c042154f25a87900ac9a1c918d4bf46fbe7dd))
+- add textInput, textArea, label ([fc0c4cf](https://github.com/chingu-x/chingu-dashboard-components/commit/fc0c4cf7281e62364bf7596e3a8f7dabd490c4d1))
+- refactor radio input ([c74d19b](https://github.com/chingu-x/chingu-dashboard-components/commit/c74d19b08da0c39eaf29060e15af5e7264b1cb4e))
+- remove text input button ([bad36ab](https://github.com/chingu-x/chingu-dashboard-components/commit/bad36abe613dab4b6ee60583cbce17bbf55b2602))
 
 # [0.8.0](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.7.0...v0.8.0) (2025-01-14)
 
