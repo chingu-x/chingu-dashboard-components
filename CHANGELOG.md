@@ -1,3 +1,10 @@
+## [0.9.1](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.9.0...v0.9.1) (2025-01-29)
+
+
+### Bug Fixes
+
+* export SteppersItem type ([c71fd91](https://github.com/chingu-x/chingu-dashboard-components/commit/c71fd919536cd642f0d1942d09f64cc4082b3936))
+
 # [0.9.0](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.8.0...v0.9.0) (2025-01-21)
 
 ### Bug Fixes
