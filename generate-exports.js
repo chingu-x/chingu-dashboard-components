@@ -16,7 +16,7 @@ const exportsObject = {
     import: "./dist/style.css",
     types: "./dist/global.d.ts",
   },
-  "./tailwind-config": "./tailwind.config.js",
+  "./chingu-theme": "./chingu-theme.js",
 };
 
 components.forEach((component) => {
