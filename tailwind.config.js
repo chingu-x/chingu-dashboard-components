@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  prefix: "um-",
+  prefix: "ui-",
   darkMode: ["class", '[data-theme="dark"]'],
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
