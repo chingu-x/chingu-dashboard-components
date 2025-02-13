@@ -81,6 +81,48 @@ const options2 = [
   },
 ];
 
+const options3 = [
+  {
+    id: "option_9",
+    value: "option_9",
+    label: (
+      <div className="flex items-center gap-2">
+        <RocketLaunchIcon className="h-7 w-7 text-base-300" />
+        <div className="flex flex-col gap-1 text-sm font-medium">
+          <span className="font-bold">Option Title</span>
+          <span>An optional description can be provided here.</span>
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: "option_10",
+    value: "option_10",
+    label: (
+      <div className="flex items-center gap-2">
+        <RocketLaunchIcon className="h-7 w-7 text-base-300" />
+        <div className="flex flex-col gap-1 text-sm font-medium">
+          <span className="font-bold">Option Title</span>
+          <span>An optional description can be provided here.</span>
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: "option_11",
+    value: "option_11",
+    label: (
+      <div className="flex items-center gap-2">
+        <RocketLaunchIcon className="h-7 w-7 text-base-300" />
+        <div className="flex flex-col gap-1 text-sm font-medium">
+          <span className="font-bold">Option Title</span>
+          <span>An optional description can be provided here.</span>
+        </div>
+      </div>
+    ),
+  },
+];
+
 const meta: Meta<typeof CheckboxGroupGrid> = {
   title: "Components/Inputs/Checkbox Groups/Grid Checkbox Group",
   component: CheckboxGroupGrid,
@@ -126,5 +168,13 @@ export const WithCustomLabel: Story = {
   args: {
     ...BaseTemplate.args,
     options: options2,
+  },
+};
+
+export const Example: Story = {
+  ...BaseTemplate,
+  args: {
+    ...BaseTemplate.args,
+    options: options3,
   },
 };
