@@ -5,6 +5,7 @@ export { default as LabelContent } from "./label-content/LabelContent";
 
 export { default as CheckboxInput } from "./checkbox-input/CheckboxInput";
 export { default as CheckboxGroupVertical } from "./checkbox-group/checkbox-group-vertical/CheckboxGroupVertical";
+export { default as CheckboxGroupGrid } from "./checkbox-group/checkbox-group-grid/CheckboxGroupGrid";
 
 export { default as DateTimePicker } from "./date-time-picker/DateTimePicker";
 
