@@ -1,3 +1,11 @@
+## [0.10.3](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.10.2...v0.10.3) (2025-02-14)
+
+
+### Bug Fixes
+
+* theme config ([36199f2](https://github.com/chingu-x/chingu-dashboard-components/commit/36199f257c62e5932c2307e0e23a7bb8b67044dd))
+* theme config ([7bd411b](https://github.com/chingu-x/chingu-dashboard-components/commit/7bd411b59adc522cdf1837041463f1bae72f199e))
+
 ## [0.10.2](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.10.1...v0.10.2) (2025-02-14)
 
 
