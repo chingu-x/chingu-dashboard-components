@@ -1,3 +1,10 @@
+## [0.10.2](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.10.1...v0.10.2) (2025-02-14)
+
+
+### Bug Fixes
+
+* add exports for chingu-theme ([1da663a](https://github.com/chingu-x/chingu-dashboard-components/commit/1da663a96f72e0f609dca6f5e137a6caf945c0bb))
+
 ## [0.10.1](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.10.0...v0.10.1) (2025-02-14)
 
 
