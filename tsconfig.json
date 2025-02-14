@@ -3,6 +3,7 @@
     "target": "ESNext",
     "module": "ESNext",
     "jsx": "react-jsx",
+    "allowJs": true,
     "declaration": true,
     "declarationDir": "dist/types",
     "outDir": "dist",
@@ -12,6 +13,6 @@
     "strict": true,
     "types": ["vite/client", "vitest"]
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/chingu-theme.js"],
   "exclude": ["node_modules", "dist"]
 }

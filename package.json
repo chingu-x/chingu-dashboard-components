@@ -101,7 +101,7 @@
       "import": "./dist/style.css",
       "types": "./dist/global.d.ts"
     },
-    "./chingu-theme": "./chingu-theme.js",
+    "./chingu-theme": "./dist/chingu-theme.js",
     "./alert": {
       "import": "./dist/alert/index.js",
       "types": "./dist/types/alert/index.d.ts"
