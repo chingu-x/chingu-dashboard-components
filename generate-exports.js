@@ -16,10 +16,7 @@ const exportsObject = {
     import: "./dist/style.css",
     types: "./dist/global.d.ts",
   },
-  "./chingu-theme": {
-    import: "./dist/chingu-theme.js",
-    types: "./dist/types/chingu-theme.d.ts",
-  },
+  "./chingu-theme": "./dist/chingu-theme.js",
 };
 
 components.forEach((component) => {
