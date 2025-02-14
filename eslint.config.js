@@ -74,7 +74,6 @@ export default [
       "vite.config.ts",
       "vitest.config.ts",
       "generate-exports.js",
-      "chingu-theme.js",
     ],
   },
 ];
