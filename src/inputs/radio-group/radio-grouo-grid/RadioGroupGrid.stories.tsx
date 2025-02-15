@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import RadioGroupGrid from "./RadioGroupGrid";
 import { RocketLaunchIcon } from "@heroicons/react/24/solid";
+import TextInput from "../../text-input/TextInput";
 
 const options1 = [
   {
@@ -134,6 +135,7 @@ const options4 = [
     id: "option_18",
     value: "option_18",
     label: "Other",
+    additionalContent: <TextInput id="textInput" placeholder="Some Text" />,
   },
 ];
 
