@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import RadioInput from "./RadioInput";
+import TextInput from "../text-input/TextInput";
 
 const meta = {
   title: "Components/Inputs/Radio",
@@ -30,4 +31,73 @@ const BaseTemplate: Story = {
 
 export const Default: Story = {
   ...BaseTemplate,
+};
+
+export const DefaultVericalLayout: Story = {
+  ...BaseTemplate,
+};
+
+export const HorizontalLayout: Story = {
+  ...BaseTemplate,
+  args: {
+    ...BaseTemplate.args,
+    id: "radio-2",
+    label: "Radio 2",
+    groupLayout: "horizontal",
+  },
+};
+
+export const RatingLayout: Story = {
+  ...BaseTemplate,
+  args: {
+    ...BaseTemplate.args,
+    id: "radio-3",
+    label: "Radio 3",
+    groupLayout: "rating",
+  },
+};
+
+export const WithBorderLayout: Story = {
+  ...BaseTemplate,
+  args: {
+    ...BaseTemplate.args,
+    id: "radio-4",
+    label: "Radio 4",
+    groupLayout: "withBorder",
+  },
+};
+
+export const WithBorderLayoutDisabled: Story = {
+  ...BaseTemplate,
+  args: {
+    ...BaseTemplate.args,
+    id: "radio-4",
+    label: "Radio 4",
+    groupLayout: "withBorder",
+    disabled: true,
+  },
+};
+
+export const WithBorderLayoutCheckedDisabled: Story = {
+  ...BaseTemplate,
+  args: {
+    ...BaseTemplate.args,
+    id: "radio-4",
+    label: "Radio 4",
+    groupLayout: "withBorder",
+    disabled: true,
+    checked: true,
+  },
+};
+
+export const WithBorderLayoutAndAdditionalContent: Story = {
+  ...BaseTemplate,
+  args: {
+    ...BaseTemplate.args,
+    id: "radio-5",
+    label: "Radio 5",
+    groupLayout: "withBorder",
+    checked: true,
+    additionalContent: <TextInput id="textInput" placeholder="Some Text" />,
+  },
 };

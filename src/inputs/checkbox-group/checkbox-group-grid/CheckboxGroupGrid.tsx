@@ -27,7 +27,7 @@ const CheckboxGroupGrid = React.forwardRef<
         label={label}
         {...props}
         ref={ref}
-        withBorder={true}
+        groupLayout={"withBorder"}
       />
     ))}
   </div>

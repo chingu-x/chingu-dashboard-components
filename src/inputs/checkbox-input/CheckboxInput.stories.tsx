@@ -55,7 +55,7 @@ export const WithBorder: Story = {
   args: {
     id: "checkbox-2",
     label: "Checkbox 2",
-    withBorder: true,
+    groupLayout: "withBorder",
   },
 };
 
@@ -63,7 +63,7 @@ export const WithBorderDisabled: Story = {
   ...BaseTemplate,
   args: {
     ...BaseTemplate.args,
-    withBorder: true,
+    groupLayout: "withBorder",
     disabled: true,
   },
 };
@@ -72,7 +72,7 @@ export const WithBorderCheckedDisabled: Story = {
   ...BaseTemplate,
   args: {
     ...BaseTemplate.args,
-    withBorder: true,
+    groupLayout: "withBorder",
     disabled: true,
     checked: true,
   },
@@ -91,6 +91,6 @@ export const WithBorderWithCustomLabel: Story = {
         </div>
       </div>
     ),
-    withBorder: true,
+    groupLayout: "withBorder",
   },
 };

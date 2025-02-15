@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import CheckboxGroupGrid from "./CheckboxGroupGrid";
+import RadioGroupGrid from "./RadioGroupGrid";
 import { RocketLaunchIcon } from "@heroicons/react/24/solid";
 
 const options1 = [
@@ -85,47 +85,61 @@ const options3 = [
   {
     id: "option_9",
     value: "option_9",
-    label: (
-      <div className="flex items-center gap-2">
-        <RocketLaunchIcon className="h-7 w-7 text-base-300" />
-        <div className="flex flex-col gap-1 text-sm font-medium">
-          <span className="font-bold">Option Title</span>
-          <span>An optional description can be provided here.</span>
-        </div>
-      </div>
-    ),
+    label: "dev.to",
   },
   {
     id: "option_10",
     value: "option_10",
-    label: (
-      <div className="flex items-center gap-2">
-        <RocketLaunchIcon className="h-7 w-7 text-base-300" />
-        <div className="flex flex-col gap-1 text-sm font-medium">
-          <span className="font-bold">Option Title</span>
-          <span>An optional description can be provided here.</span>
-        </div>
-      </div>
-    ),
+    label: "FreeCodeCamp Forum",
   },
   {
     id: "option_11",
     value: "option_11",
-    label: (
-      <div className="flex items-center gap-2">
-        <RocketLaunchIcon className="h-7 w-7 text-base-300" />
-        <div className="flex flex-col gap-1 text-sm font-medium">
-          <span className="font-bold">Option Title</span>
-          <span>An optional description can be provided here.</span>
-        </div>
-      </div>
-    ),
+    label: "The Job Hackers",
+  },
+  {
+    id: "option_12",
+    value: "option_12",
+    label: "Google Search",
+  },
+  {
+    id: "option_13",
+    value: "option_13",
+    label: "Other",
   },
 ];
 
-const meta: Meta<typeof CheckboxGroupGrid> = {
-  title: "Components/Inputs/Checkbox Groups/Grid Checkbox Group",
-  component: CheckboxGroupGrid,
+const options4 = [
+  {
+    id: "option_14",
+    value: "option_14",
+    label: "dev.to",
+  },
+  {
+    id: "option_15",
+    value: "option_15",
+    label: "FreeCodeCamp Forum",
+  },
+  {
+    id: "option_16",
+    value: "option_16",
+    label: "The Job Hackers",
+  },
+  {
+    id: "option_17",
+    value: "option_17",
+    label: "Google Search",
+  },
+  {
+    id: "option_18",
+    value: "option_18",
+    label: "Other",
+  },
+];
+
+const meta: Meta<typeof RadioGroupGrid> = {
+  title: "Components/Inputs/Radio Groups/Grid Radio Group",
+  component: RadioGroupGrid,
   parameters: {
     layout: "centered",
   },
@@ -137,7 +151,7 @@ const meta: Meta<typeof CheckboxGroupGrid> = {
       control: { type: "object" },
     },
   },
-} satisfies Meta<typeof CheckboxGroupGrid>;
+} satisfies Meta<typeof RadioGroupGrid>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -153,7 +167,7 @@ const BaseTemplate: Story = {
   args: {
     options: options1,
   },
-  render: ({ ...args }) => <CheckboxGroupGrid {...args} />,
+  render: ({ ...args }) => <RadioGroupGrid {...args} name="options" />,
 };
 
 export const Default: Story = {
@@ -176,5 +190,13 @@ export const ExampleWithUnevenNumberOfOptions: Story = {
   args: {
     ...BaseTemplate.args,
     options: options3,
+  },
+};
+
+export const ExampleWithInput: Story = {
+  ...BaseTemplate,
+  args: {
+    ...BaseTemplate.args,
+    options: options4,
   },
 };
