@@ -194,11 +194,3 @@ export const ExampleWithUnevenNumberOfOptions: Story = {
     options: options3,
   },
 };
-
-export const ExampleWithInput: Story = {
-  ...BaseTemplate,
-  args: {
-    ...BaseTemplate.args,
-    options: options4,
-  },
-};

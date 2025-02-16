@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import RadioInput from "./RadioInput";
 import TextInput from "../text-input/TextInput";
+import { useState } from "react";
 
 const meta = {
   title: "Components/Inputs/Radio",
@@ -91,13 +92,27 @@ export const WithBorderLayoutCheckedDisabled: Story = {
 };
 
 export const WithBorderLayoutAndAdditionalContent: Story = {
-  ...BaseTemplate,
+  decorators: [
+    (Story) => (
+      <div style={{ width: 500 }}>
+        <Story />
+      </div>
+    ),
+  ],
   args: {
-    ...BaseTemplate.args,
     id: "radio-5",
     label: "Radio 5",
     groupLayout: "withBorder",
-    checked: true,
     additionalContent: <TextInput id="textInput" placeholder="Some Text" />,
+  },
+  render: ({ ...args }) => {
+    const [isChecked, setIsChecked] = useState(false);
+    return (
+      <RadioInput
+        {...args}
+        checked={isChecked}
+        onChange={() => setIsChecked((prev) => !prev)}
+      />
+    );
   },
 };
