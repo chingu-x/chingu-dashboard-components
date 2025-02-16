@@ -12,3 +12,5 @@ export { default as RadioInput } from "./radio-input/RadioInput";
 export { default as RadioGroupHorizontal } from "./radio-group/radio-group-horizontal/RadioGroupHorizontal";
 export { default as RadioGroupRating } from "./radio-group/radio-group-rating/RadioGroupRating";
 export { default as RadioGroupVertical } from "./radio-group/radio-group-vertical/RadioGroupVertical";
+
+export { default as DropdownSelect } from "./dropdown-select/DropdownSelect";
