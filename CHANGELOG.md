@@ -1,3 +1,10 @@
+## [0.10.4](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.10.3...v0.10.4) (2025-02-19)
+
+
+### Bug Fixes
+
+* export CheckboxInputProps and RadioInputProps types ([f4956cf](https://github.com/chingu-x/chingu-dashboard-components/commit/f4956cf746b71e2ede8cf5dda4f462e377620ae9))
+
 ## [0.10.3](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.10.2...v0.10.3) (2025-02-14)
 
 
