@@ -1,6 +1,6 @@
 {
   "name": "@chingu-x/components",
-  "version": "0.10.0",
+  "version": "0.10.4",
   "description": "Component library for Chingu dashboard projects",
   "module": "dist/index.js",
   "type": "module",
@@ -103,7 +103,7 @@
       "import": "./dist/style.css",
       "types": "./dist/global.d.ts"
     },
-    "./tailwind-config": "./tailwind.config.js",
+    "./chingu-theme": "./dist/chingu-theme.js",
     "./alert": {
       "import": "./dist/alert/index.js",
       "types": "./dist/types/alert/index.d.ts"

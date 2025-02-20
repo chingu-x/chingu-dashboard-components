@@ -1,3 +1,32 @@
+## [0.10.4](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.10.3...v0.10.4) (2025-02-19)
+
+
+### Bug Fixes
+
+* export CheckboxInputProps and RadioInputProps types ([f4956cf](https://github.com/chingu-x/chingu-dashboard-components/commit/f4956cf746b71e2ede8cf5dda4f462e377620ae9))
+
+## [0.10.3](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.10.2...v0.10.3) (2025-02-14)
+
+
+### Bug Fixes
+
+* theme config ([36199f2](https://github.com/chingu-x/chingu-dashboard-components/commit/36199f257c62e5932c2307e0e23a7bb8b67044dd))
+* theme config ([7bd411b](https://github.com/chingu-x/chingu-dashboard-components/commit/7bd411b59adc522cdf1837041463f1bae72f199e))
+
+## [0.10.2](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.10.1...v0.10.2) (2025-02-14)
+
+
+### Bug Fixes
+
+* add exports for chingu-theme ([1da663a](https://github.com/chingu-x/chingu-dashboard-components/commit/1da663a96f72e0f609dca6f5e137a6caf945c0bb))
+
+## [0.10.1](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.10.0...v0.10.1) (2025-02-14)
+
+
+### Bug Fixes
+
+* fix theme configuration ([88dc551](https://github.com/chingu-x/chingu-dashboard-components/commit/88dc5513869eb9f948bf512627c1402907fc727e))
+
 # [0.10.0](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.9.1...v0.10.0) (2025-02-04)
 
 ### Bug Fixes
