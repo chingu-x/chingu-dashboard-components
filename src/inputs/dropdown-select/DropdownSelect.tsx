@@ -3,6 +3,8 @@ import Select, {
   type GroupBase,
   type Props as SelectProps,
 } from "react-select";
+import Label from "../label/Label";
+import FieldMessage from "../field-message/FieldMessage";
 
 type DropdownSelectOption = {
   value: string;
@@ -16,22 +18,36 @@ interface DropdownSelectProps
     GroupBase<DropdownSelectOption>
   > {
   id: string;
-  label: string;
   options: DropdownSelectOption[];
+  label?: string;
+  suggestion?: string;
+  errorMessage?: string | undefined;
 }
 
 const DropdownSelect = React.forwardRef<Select, DropdownSelectProps>(
-  ({ id, options, className, ...props }, ref) => {
+  (
+    { id, options, label, errorMessage, suggestion, className, ...props },
+    ref,
+  ) => {
     return (
-      <div className="flex flex-col w-full">
-        <Select
-          id={id}
-          options={options}
-          // @ts-expect-error: idk
-          ref={ref}
-          {...props}
-          classNamePrefix="react-select"
-          className={className}
+      <div className="relative w-full">
+        {/* LABEL */}
+        {label && <Label htmlFor={id}>{label}</Label>}
+        <div className="relative my-2 group">
+          <Select
+            id={id}
+            options={options}
+            // @ts-expect-error: idk
+            ref={ref}
+            {...props}
+            classNamePrefix="react-select"
+            className={`${className} ${errorMessage ? "react-select-error" : ""}`}
+          />
+        </div>
+        <FieldMessage
+          id={`${id}-message`}
+          errorMessage={errorMessage && errorMessage}
+          suggestionMessage={errorMessage ? "" : suggestion}
         />
       </div>
     );

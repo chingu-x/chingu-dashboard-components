@@ -1,6 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/react";
-
 import DropdownSelect from "./DropdownSelect";
+import countries from "world-countries";
+
+const formattedCountriesOptions = countries.map((country) => ({
+  value: country.cca2,
+  label: country.name.common,
+}));
 
 const options = [
   { value: "chocolate", label: "Chocolate" },
@@ -52,7 +57,6 @@ type Story = StoryObj<typeof meta>;
 const BaseTemplate: Story = {
   args: {
     id: "select",
-    label: "label",
     placeholder: "Placeholder",
     options: options,
   },
@@ -63,4 +67,31 @@ const BaseTemplate: Story = {
 
 export const Default: Story = {
   ...BaseTemplate,
+};
+
+export const WithLabel: Story = {
+  ...BaseTemplate,
+  args: {
+    ...BaseTemplate.args,
+    label: "Label",
+  },
+};
+
+export const WithError: Story = {
+  ...BaseTemplate,
+  args: {
+    ...BaseTemplate.args,
+    label: "Label",
+    errorMessage: "Error!",
+  },
+};
+
+export const Countires: Story = {
+  ...BaseTemplate,
+  args: {
+    id: "countriesSelect",
+    label: "Country",
+    placeholder: "Select country",
+    options: formattedCountriesOptions,
+  },
 };

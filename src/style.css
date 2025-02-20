@@ -231,11 +231,33 @@ input::-ms-clear {
   border: 2px solid rgba(107, 114, 128, 0.4) !important;
 }
 
+.react-select-error .react-select__control {
+  background-color: #f5f5f5 !important;
+  border: 2px solid rgba(230, 98, 75, 0.4) !important;
+}
+
+[data-theme="dark"] .react-select-error .react-select__control {
+  background-color: #16171a !important;
+  border: 2px solid rgba(235, 129, 111, 0.4) !important;
+}
+
 .react-select__control:focus,
 .react-select__control:hover {
   border-color: rgba(107, 114, 128, 0.4) !important;
   outline: none !important;
   box-shadow: 0px 0px 0px 3px rgba(107, 114, 128, 0.3) !important;
+}
+
+.react-select-error .react-select__control:focus,
+.react-select-error .react-select__control:hover {
+  border-color: rgba(230, 98, 75, 0.4) !important;
+  box-shadow: 0px 0px 0px 3px rgba(230, 98, 75, 0.2) !important;
+}
+
+[data-theme="dark"] .react-select-error .react-select__control:focus,
+[data-theme="dark"] .react-select-error .react-select__control:hover {
+  border-color: rgba(235, 129, 111, 0.4) !important;
+  box-shadow: 0px 0px 0px 3px rgba(235, 129, 111, 0.2) !important;
 }
 
 .react-select__value-container {
@@ -260,12 +282,7 @@ input::-ms-clear {
 }
 
 .react-select__indicator-separator {
-  background-color: #9ca1aa !important;
-  margin: 0 !important;
-}
-
-[data-theme="dark"].react-select__indicator-separator {
-  background-color: #50555e !important;
+  display: none;
 }
 
 .react-select__indicator {
