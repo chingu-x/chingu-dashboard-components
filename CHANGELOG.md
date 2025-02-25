@@ -1,3 +1,10 @@
+## [0.10.5](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.10.4...v0.10.5) (2025-02-25)
+
+
+### Bug Fixes
+
+* display icons as inline svg instead of imported image ([10e48d2](https://github.com/chingu-x/chingu-dashboard-components/commit/10e48d24fa730b71c2c945ec047e4af4bf8bef27))
+
 ## [0.10.4](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.10.3...v0.10.4) (2025-02-19)
 
 
