@@ -1,4 +1,4 @@
-import React from "react";
+import { forwardRef, useImperativeHandle, useRef } from "react";
 import Select, {
   type GroupBase,
   type Props as SelectProps,
@@ -24,11 +24,15 @@ interface DropdownSelectProps
   errorMessage?: string | undefined;
 }
 
-const DropdownSelect = React.forwardRef<Select, DropdownSelectProps>(
+const DropdownSelect = forwardRef<unknown, DropdownSelectProps>(
   (
     { id, options, label, errorMessage, suggestion, className, ...props },
     ref,
   ) => {
+    const selectRef = useRef(null);
+
+    useImperativeHandle(ref, () => selectRef.current);
+
     return (
       <div className="relative w-full">
         {/* LABEL */}
@@ -37,8 +41,7 @@ const DropdownSelect = React.forwardRef<Select, DropdownSelectProps>(
           <Select
             id={id}
             options={options}
-            // @ts-expect-error: idk
-            ref={ref}
+            ref={selectRef}
             {...props}
             classNamePrefix="react-select"
             className={`${className} ${errorMessage ? "react-select-error" : ""}`}
