@@ -104,6 +104,10 @@
       "types": "./dist/global.d.ts"
     },
     "./chingu-theme": "./dist/chingu-theme.js",
+    "./tw-merge": {
+      "import": "./dist/tw-merge.js",
+      "types": "./dist/types/tw-merge.d.ts"
+    },
     "./alert": {
       "import": "./dist/alert/index.js",
       "types": "./dist/types/alert/index.d.ts"

@@ -17,6 +17,10 @@ const exportsObject = {
     types: "./dist/global.d.ts",
   },
   "./chingu-theme": "./dist/chingu-theme.js",
+  "./tw-merge": {
+    import: "./dist/tw-merge.js",
+    types: "./dist/types/tw-merge.d.ts",
+  },
 };
 
 components.forEach((component) => {
