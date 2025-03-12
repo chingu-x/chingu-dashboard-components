@@ -1,3 +1,10 @@
+# [0.11.0](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.10.5...v0.11.0) (2025-03-12)
+
+
+### Features
+
+* export cn utility function ([f1c36bb](https://github.com/chingu-x/chingu-dashboard-components/commit/f1c36bbe4a47a71a3163e00aea9c58d2f64ec174))
+
 ## [0.10.5](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.10.4...v0.10.5) (2025-02-25)
 
 
