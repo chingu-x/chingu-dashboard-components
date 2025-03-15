@@ -4,13 +4,15 @@ export { default as Label } from "./label/Label";
 export { default as LabelContent } from "./label-content/LabelContent";
 export {
   default as CheckboxInput,
-  CheckboxInputProps,
+  type CheckboxInputProps,
 } from "./checkbox-input/CheckboxInput";
 export { default as CheckboxGroupVertical } from "./checkbox-group/checkbox-group-vertical/CheckboxGroupVertical";
+export { default as CheckboxGroupGrid } from "./checkbox-group/checkbox-group-grid/CheckboxGroupGrid";
 export {
   default as RadioInput,
-  RadioInputProps,
+  type RadioInputProps,
 } from "./radio-input/RadioInput";
 export { default as RadioGroupHorizontal } from "./radio-group/radio-group-horizontal/RadioGroupHorizontal";
 export { default as RadioGroupRating } from "./radio-group/radio-group-rating/RadioGroupRating";
 export { default as RadioGroupVertical } from "./radio-group/radio-group-vertical/RadioGroupVertical";
+export { default as RadioGroupGrid } from "./radio-group/radio-grouo-grid/RadioGroupGrid";
