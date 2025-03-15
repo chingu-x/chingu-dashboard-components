@@ -43,28 +43,25 @@
 
 # [0.10.0](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.9.1...v0.10.0) (2025-02-04)
 
-
 ### Bug Fixes
 
-* exports ([11f9c7d](https://github.com/chingu-x/chingu-dashboard-components/commit/11f9c7dc1f1dbc1d3469d754886fd92f83f915f3))
-* fix mode toggle in nav ([4445f58](https://github.com/chingu-x/chingu-dashboard-components/commit/4445f58655a2bb8db4a32aae0434111bed59c17f))
-* index.css ([53d8c41](https://github.com/chingu-x/chingu-dashboard-components/commit/53d8c411f2f8bdb33bd5e2906ad62356cfda0e60))
-* package ([e488aae](https://github.com/chingu-x/chingu-dashboard-components/commit/e488aaee6067c71f50f3d9b7548af0dd62d3cd95))
-* package ([fd825f0](https://github.com/chingu-x/chingu-dashboard-components/commit/fd825f0ccd0e53d5902eccd02143f69d11074870))
-* package & index.css ([50c2def](https://github.com/chingu-x/chingu-dashboard-components/commit/50c2defa11982a2fb19306091ede223127ea0b01))
-
+- exports ([11f9c7d](https://github.com/chingu-x/chingu-dashboard-components/commit/11f9c7dc1f1dbc1d3469d754886fd92f83f915f3))
+- fix mode toggle in nav ([4445f58](https://github.com/chingu-x/chingu-dashboard-components/commit/4445f58655a2bb8db4a32aae0434111bed59c17f))
+- index.css ([53d8c41](https://github.com/chingu-x/chingu-dashboard-components/commit/53d8c411f2f8bdb33bd5e2906ad62356cfda0e60))
+- package ([e488aae](https://github.com/chingu-x/chingu-dashboard-components/commit/e488aaee6067c71f50f3d9b7548af0dd62d3cd95))
+- package ([fd825f0](https://github.com/chingu-x/chingu-dashboard-components/commit/fd825f0ccd0e53d5902eccd02143f69d11074870))
+- package & index.css ([50c2def](https://github.com/chingu-x/chingu-dashboard-components/commit/50c2defa11982a2fb19306091ede223127ea0b01))
 
 ### Features
 
-* add social button ([be73a05](https://github.com/chingu-x/chingu-dashboard-components/commit/be73a055c9e29c501952b829a14cc29fda808b86))
-* add top navbar components ([d5c24fb](https://github.com/chingu-x/chingu-dashboard-components/commit/d5c24fb703588bf269f6539dc75487a4f59a20f2))
+- add social button ([be73a05](https://github.com/chingu-x/chingu-dashboard-components/commit/be73a055c9e29c501952b829a14cc29fda808b86))
+- add top navbar components ([d5c24fb](https://github.com/chingu-x/chingu-dashboard-components/commit/d5c24fb703588bf269f6539dc75487a4f59a20f2))
 
 ## [0.9.1](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.9.0...v0.9.1) (2025-01-29)
 
-
 ### Bug Fixes
 
-* export SteppersItem type ([c71fd91](https://github.com/chingu-x/chingu-dashboard-components/commit/c71fd919536cd642f0d1942d09f64cc4082b3936))
+- export SteppersItem type ([c71fd91](https://github.com/chingu-x/chingu-dashboard-components/commit/c71fd919536cd642f0d1942d09f64cc4082b3936))
 
 # [0.9.0](https://github.com/chingu-x/chingu-dashboard-components/compare/v0.8.0...v0.9.0) (2025-01-21)
 
